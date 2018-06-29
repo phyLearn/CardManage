@@ -1,0 +1,46 @@
+{
+    "changeData":
+    {
+        "nav":
+        {
+            "backgroundImg":"navBar_bg_414x70",
+            "backImg":"back_9x16",
+            "titleColor":"#000000",
+            "titleFont":"18"
+        },
+        "tabbar":
+        {
+            "baseSet":
+            [
+             {
+             "vcName": "firstHomeViewController",
+             "title": "首页",
+             "imageName": "tabbar_firstItem_25x25_",
+             "selectImageName":"tabbar_firstItem_selected_25x25_"
+             },
+             {
+             "vcName": "secondHomeViewController",
+             "title": "Test_2",
+             "imageName": "tabbar_secondItem_25x25_",
+             "selectImageName":"tabbar_secondItem_selected_25x25_"
+             },
+             {
+             "vcName": "thridHomeViewController",
+             "title": "Test_3",
+             "imageName": "tabbar_discovery_25x25_",
+             "selectImageName":"tabbar_discovery_selected_25x25_"
+             },
+             {
+             "vcName": "fourHomeViewController",
+             "title": "Test_3",
+             "imageName": "tabbar_discovery_25x25_",
+             "selectImageName":"tabbar_discovery_selected_25x25_"
+             }
+             ],
+            "appearance":
+            {
+                "selectColor":"D02346"
+            }
+        }
+    }
+}
