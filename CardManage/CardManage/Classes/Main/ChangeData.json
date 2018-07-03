@@ -15,31 +15,31 @@
              {
              "vcName": "firstHomeViewController",
              "title": "首页",
-             "imageName": "tabbar_firstItem_25x25_",
-             "selectImageName":"tabbar_firstItem_selected_25x25_"
+             "imageName": "shouyeTab_25x25_",
+             "selectImageName":"shouyeTabSelect_25x25_"
              },
              {
              "vcName": "secondHomeViewController",
-             "title": "Test_2",
-             "imageName": "tabbar_secondItem_25x25_",
-             "selectImageName":"tabbar_secondItem_selected_25x25_"
+             "title": "授信",
+             "imageName": "shouxinTab_25x25_",
+             "selectImageName":"shouxinTabSelect_25x25_"
              },
              {
              "vcName": "thridHomeViewController",
-             "title": "Test_3",
-             "imageName": "tabbar_discovery_25x25_",
-             "selectImageName":"tabbar_discovery_selected_25x25_"
+             "title": "分享",
+             "imageName": "shareTab_25x25_",
+             "selectImageName":"shareTabSelect_25x25_"
              },
              {
              "vcName": "fourHomeViewController",
-             "title": "Test_3",
-             "imageName": "tabbar_discovery_25x25_",
-             "selectImageName":"tabbar_discovery_selected_25x25_"
+             "title": "我的",
+             "imageName": "wodeTab_25x25_",
+             "selectImageName":"wodeTabSelect_25x25_"
              }
              ],
             "appearance":
             {
-                "selectColor":"D02346"
+                "selectColor":"#000000"
             }
         }
     }
