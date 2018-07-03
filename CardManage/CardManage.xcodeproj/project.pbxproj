@@ -40,6 +40,8 @@
 		3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD4020E5DA5D000FDBA5 /* ChangeData.json */; };
 		BAA76285327BC2DA2D371B82 /* libPods-CardManage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */; };
 		C113FFE52D3127B86B61EC29 /* libPods-CardManageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AA99EF15176DD2A8A9CD8C /* libPods-CardManageUITests.a */; };
+		E799406620EB1BC500D3F2FE /* HeadMainBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */; };
+		E799406D20EB1D4100D3F2FE /* CustomMainbBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,10 @@
 		AEFAE602D8919708605F369B /* libPods-CardManageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3570EE3700E5965F142D372 /* Pods-CardManageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageTests/Pods-CardManageTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFC08A2A1E8DBF40ED7CD363 /* Pods-CardManageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageTests/Pods-CardManageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E799406420EB1BC500D3F2FE /* HeadMainBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadMainBtnView.h; sourceTree = "<group>"; };
+		E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadMainBtnView.m; sourceTree = "<group>"; };
+		E799406B20EB1D4100D3F2FE /* CustomMainbBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMainbBtn.h; sourceTree = "<group>"; };
+		E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMainbBtn.m; sourceTree = "<group>"; };
 		F4FFE5A02BB352DD63C6AB4D /* Pods-CardManageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageUITests/Pods-CardManageUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +253,7 @@
 		3AD7AD0520E5C42A000FDBA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E799406320EB1B6E00D3F2FE /* View */,
 				3AD7AD0620E5C42A000FDBA5 /* Business */,
 				3AD7AD0720E5C42A000FDBA5 /* Main */,
 			);
@@ -370,6 +377,17 @@
 				F4FFE5A02BB352DD63C6AB4D /* Pods-CardManageUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E799406320EB1B6E00D3F2FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E799406420EB1BC500D3F2FE /* HeadMainBtnView.h */,
+				E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */,
+				E799406B20EB1D4100D3F2FE /* CustomMainbBtn.h */,
+				E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +595,7 @@
 				3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */,
 				3AD7AD0320E5C397000FDBA5 /* HYNetworkCache.m in Sources */,
 				3AD7AD2220E5C517000FDBA5 /* NSTimer+addition.m in Sources */,
+				E799406620EB1BC500D3F2FE /* HeadMainBtnView.m in Sources */,
 				3AD7AD1020E5C484000FDBA5 /* AppBaseViewController.m in Sources */,
 				3AD7AD3420E5D85F000FDBA5 /* fourHomeViewController.m in Sources */,
 				3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */,
@@ -588,6 +607,7 @@
 				3AD7AD1220E5C484000FDBA5 /* MainTabBarViewController.m in Sources */,
 				3AD7AD2420E5C517000FDBA5 /* UITextField+HYAdd.m in Sources */,
 				3AD7AD0420E5C397000FDBA5 /* HYNetworkHelper.m in Sources */,
+				E799406D20EB1D4100D3F2FE /* CustomMainbBtn.m in Sources */,
 				3AD7ACCD20E5BD55000FDBA5 /* AppDelegate.m in Sources */,
 				3AD7AD2320E5C517000FDBA5 /* UIView+HYAdd.m in Sources */,
 			);
@@ -755,11 +775,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y6NW57B6JE;
+				DEVELOPMENT_TEAM = WNX4QXFZ58;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CardManage/Classes/Main/AppHeadPch.pch";
 				INFOPLIST_FILE = CardManage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cyber.CardManage;
+				PRODUCT_BUNDLE_IDENTIFIER = CybeWiser.CardManage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -772,11 +792,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y6NW57B6JE;
+				DEVELOPMENT_TEAM = WNX4QXFZ58;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CardManage/Classes/Main/AppHeadPch.pch";
 				INFOPLIST_FILE = CardManage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Cyber.CardManage;
+				PRODUCT_BUNDLE_IDENTIFIER = CybeWiser.CardManage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

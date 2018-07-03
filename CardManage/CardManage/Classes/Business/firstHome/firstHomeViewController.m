@@ -24,7 +24,4 @@
     self.navigationController.delegate = (id)self;
 }
 
-
-#pragma mark --- 配置相关 ---
-
 @end
