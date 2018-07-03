@@ -21,7 +21,7 @@
 {
     if(!_infoDict)
     {
-        NSDictionary *dict = [LocalData getLocalJsonDataWithName:@"ChangeData.json"];
+        NSDictionary *dict = [appAppearInfo getInfoDict];
         _infoDict = dict[@"changeData"][@"tabbar"];
     }
     return _infoDict;

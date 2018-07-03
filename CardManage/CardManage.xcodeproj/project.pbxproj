@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31EB0C60A3B74188CEEB07C8 /* libPods-CardManageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFAE602D8919708605F369B /* libPods-CardManageTests.a */; };
+		3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6A920EB16D600E54255 /* appAppearInfo.m */; };
+		3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */; };
 		3AD7ACCD20E5BD55000FDBA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7ACCC20E5BD55000FDBA5 /* AppDelegate.m */; };
 		3AD7ACD020E5BD55000FDBA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7ACCF20E5BD55000FDBA5 /* ViewController.m */; };
 		3AD7ACD320E5BD55000FDBA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7ACD120E5BD55000FDBA5 /* Main.storyboard */; };
@@ -60,6 +62,10 @@
 /* Begin PBXFileReference section */
 		13CB3D416374B6D195D80593 /* Pods-CardManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManage/Pods-CardManage.debug.xcconfig"; sourceTree = "<group>"; };
 		23D8AB0A9E4DEAD257CC1245 /* Pods-CardManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManage/Pods-CardManage.release.xcconfig"; sourceTree = "<group>"; };
+		3A57B6A820EB16D600E54255 /* appAppearInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = appAppearInfo.h; sourceTree = "<group>"; };
+		3A57B6A920EB16D600E54255 /* appAppearInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appAppearInfo.m; sourceTree = "<group>"; };
+		3A57B6AB20EB1B8900E54255 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
+		3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hidden.m"; sourceTree = "<group>"; };
 		3AD7ACC820E5BD55000FDBA5 /* CardManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD7ACCB20E5BD55000FDBA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AD7ACCC20E5BD55000FDBA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -270,6 +276,8 @@
 				3AD7AD0D20E5C483000FDBA5 /* MainNavigationController.m */,
 				3AD7AD0B20E5C483000FDBA5 /* MainTabBarViewController.h */,
 				3AD7AD0F20E5C483000FDBA5 /* MainTabBarViewController.m */,
+				3A57B6A820EB16D600E54255 /* appAppearInfo.h */,
+				3A57B6A920EB16D600E54255 /* appAppearInfo.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -305,6 +313,8 @@
 				3AD7AD1D20E5C517000FDBA5 /* UIView+HYAdd.m */,
 				3AD7AD1E20E5C517000FDBA5 /* UIButton+HYAdd.h */,
 				3AD7AD1F20E5C517000FDBA5 /* UITextField+HYAdd.m */,
+				3A57B6AB20EB1B8900E54255 /* UIViewController+Hidden.h */,
+				3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -564,10 +574,12 @@
 				3AD7AD2020E5C517000FDBA5 /* UIImage+HYAdd.m in Sources */,
 				3AD7AD2F20E5D84C000FDBA5 /* firstHomeViewController.m in Sources */,
 				3AD7ACDB20E5BD55000FDBA5 /* main.m in Sources */,
+				3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */,
 				3AD7AD0320E5C397000FDBA5 /* HYNetworkCache.m in Sources */,
 				3AD7AD2220E5C517000FDBA5 /* NSTimer+addition.m in Sources */,
 				3AD7AD1020E5C484000FDBA5 /* AppBaseViewController.m in Sources */,
 				3AD7AD3420E5D85F000FDBA5 /* fourHomeViewController.m in Sources */,
+				3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */,
 				3AD7AD1120E5C484000FDBA5 /* MainNavigationController.m in Sources */,
 				3AD7AD3E20E5D885000FDBA5 /* thridHomeViewController.m in Sources */,
 				3AD7AD3920E5D870000FDBA5 /* secondHomeViewController.m in Sources */,
