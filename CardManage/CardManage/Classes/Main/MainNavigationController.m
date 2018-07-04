@@ -39,7 +39,12 @@
 {
     UINavigationBar *bar = [UINavigationBar appearance];//统一设置主题
     //改变背景
-    [bar setBackgroundImage:[UIImage imageNamed:self.infoDict[@"backgroundImg"]] forBarMetrics:UIBarMetricsDefault];
+    if(self.infoDict[@"backgroundImg"]){
+        [bar setBackgroundImage:[UIImage imageNamed:self.infoDict[@"backgroundImg"]] forBarMetrics:UIBarMetricsDefault];
+    }else{
+        //设置主题颜色
+        [bar setBarTintColor:[UIColor colorWithHexString:self.infoDict[@"backColor"]]];
+    }
     bar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor colorWithHexString:self.infoDict[@"titleColor"]],NSFontAttributeName:[UIFont boldSystemFontOfSize:[self.infoDict[@"titleFont"] intValue]]};
 }
 

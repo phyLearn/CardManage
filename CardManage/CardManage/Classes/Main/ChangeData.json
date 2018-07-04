@@ -3,9 +3,9 @@
     {
         "nav":
         {
-            "backgroundImg":"navBar_bg_414x70",
-            "backImg":"back_9x16",
-            "titleColor":"#000000",
+            "backImg":"back_image",
+            "backColor":"#141419",
+            "titleColor":"#ffffff",
             "titleFont":"18"
         },
         "tabbar":
