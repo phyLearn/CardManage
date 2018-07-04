@@ -8,6 +8,8 @@
 
 #import "AppBaseViewController.h"
 
-@interface firstHomeViewController : AppBaseViewController
+@interface firstHomeViewController : AppBaseViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 @end

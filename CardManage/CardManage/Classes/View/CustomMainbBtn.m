@@ -25,7 +25,7 @@
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         // 背景
-        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     }
     return self;
 }
