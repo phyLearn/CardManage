@@ -8,6 +8,7 @@ target 'CardManage' do
   pod 'AFNetworking'
   pod 'YYKit'
   pod 'FMDB'
+  pod 'Masonry'
   # Pods for CardManage
 
   target 'CardManageTests' do
