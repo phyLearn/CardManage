@@ -9,6 +9,7 @@ target 'CardManage' do
   pod 'YYKit'
   pod 'FMDB'
   pod 'Masonry'
+  pod 'MBProgressHUD'
   # Pods for CardManage
 
   target 'CardManageTests' do

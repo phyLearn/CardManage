@@ -7,6 +7,7 @@
 //
 
 #import "firstHomeViewController.h"
+#import "loginMainViewController.h"
 
 @interface firstHomeViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    loginMainViewController *login = [[loginMainViewController alloc] init];
+    [self.navigationController pushViewController:login animated:YES];
 }
 
 
