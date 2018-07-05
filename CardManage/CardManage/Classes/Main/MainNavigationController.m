@@ -57,7 +57,10 @@
     {
         viewController.hidesBottomBarWhenPushed = YES;
         // 自定义返回按钮
-        UIButton *btn = [[UIButton alloc] init];
+        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        [btn.widthAnchor constraintEqualToConstant:30].active = YES;
+        [btn.heightAnchor constraintEqualToConstant:30].active = YES;
+        
         [btn setImage:[UIImage imageNamed:self.infoDict[@"backImg"]] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         [btn sizeToFit];

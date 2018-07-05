@@ -7,6 +7,7 @@
 //
 
 #import "firstHomeViewController.h"
+#import "loginMainViewController.h"
 #import "HeadMainBtnView.h"
 
 @interface firstHomeViewController ()
@@ -21,10 +22,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    loginMainViewController *login = [[loginMainViewController alloc] init];
+//    [self.navigationController pushViewController:login animated:YES];
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
+<<<<<<< HEAD
     self.headViewHeight = HeadViewHeight;
     [self.view addSubview:self.headMainBtnView];
+=======
+>>>>>>> 2edae0d3a0648db0fe6f08311f847d5d97024468
 }
 
 

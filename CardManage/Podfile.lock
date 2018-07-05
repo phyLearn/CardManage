@@ -18,6 +18,7 @@ PODS:
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - AFNetworking
   - FMDB
   - Masonry
+  - MBProgressHUD
   - YYKit
 
 SPEC REPOS:
@@ -33,14 +35,16 @@ SPEC REPOS:
     - AFNetworking
     - FMDB
     - Masonry
+    - MBProgressHUD
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: d750f0a89c587869a521248a6108af6c91861a48
+PODFILE CHECKSUM: b93c38bcb3d973b6961857e2e3b6144bde1015ec
 
 COCOAPODS: 1.5.3

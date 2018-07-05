@@ -22,9 +22,20 @@
     [self touchHideKeyboard];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //将状态栏改为白色
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+}
+
 - (void)autoKeyBoard
 {
     [self obtainAllTextField:self.view];
+}
+
+//将状态栏改为白色
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - 键盘相关

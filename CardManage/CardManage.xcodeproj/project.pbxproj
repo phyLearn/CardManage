@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		31EB0C60A3B74188CEEB07C8 /* libPods-CardManageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFAE602D8919708605F369B /* libPods-CardManageTests.a */; };
+		3A49A11020EE02390023C830 /* loginMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A49A10E20EE02390023C830 /* loginMainViewController.m */; };
+		3A49A11120EE02390023C830 /* loginMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A49A10F20EE02390023C830 /* loginMainViewController.xib */; };
+		3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */; };
 		3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6A920EB16D600E54255 /* appAppearInfo.m */; };
 		3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */; };
 		3AD7ACCD20E5BD55000FDBA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7ACCC20E5BD55000FDBA5 /* AppDelegate.m */; };
@@ -64,6 +67,11 @@
 /* Begin PBXFileReference section */
 		13CB3D416374B6D195D80593 /* Pods-CardManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManage/Pods-CardManage.debug.xcconfig"; sourceTree = "<group>"; };
 		23D8AB0A9E4DEAD257CC1245 /* Pods-CardManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManage/Pods-CardManage.release.xcconfig"; sourceTree = "<group>"; };
+		3A49A10D20EE02390023C830 /* loginMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginMainViewController.h; sourceTree = "<group>"; };
+		3A49A10E20EE02390023C830 /* loginMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginMainViewController.m; sourceTree = "<group>"; };
+		3A49A10F20EE02390023C830 /* loginMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginMainViewController.xib; sourceTree = "<group>"; };
+		3A49A11920EE0EFF0023C830 /* likeLoginBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = likeLoginBtn.h; sourceTree = "<group>"; };
+		3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = likeLoginBtn.m; sourceTree = "<group>"; };
 		3A57B6A820EB16D600E54255 /* appAppearInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = appAppearInfo.h; sourceTree = "<group>"; };
 		3A57B6A920EB16D600E54255 /* appAppearInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appAppearInfo.m; sourceTree = "<group>"; };
 		3A57B6AB20EB1B8900E54255 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
@@ -172,9 +180,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A49A11820EE0EE50023C830 /* commonView */ = {
+			isa = PBXGroup;
+			children = (
+				3A49A11920EE0EFF0023C830 /* likeLoginBtn.h */,
+				3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */,
+			);
+			path = commonView;
+			sourceTree = "<group>";
+		};
 		3A57B6AE20EB286600E54255 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				3A49A10D20EE02390023C830 /* loginMainViewController.h */,
+				3A49A10E20EE02390023C830 /* loginMainViewController.m */,
+				3A49A10F20EE02390023C830 /* loginMainViewController.xib */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -300,6 +320,7 @@
 		3AD7AD1320E5C517000FDBA5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3A49A11820EE0EE50023C830 /* commonView */,
 				3AD7AD1420E5C517000FDBA5 /* Tools */,
 				3AD7AD1520E5C517000FDBA5 /* Category */,
 			);
@@ -514,6 +535,7 @@
 				3AD7ACD520E5BD55000FDBA5 /* Assets.xcassets in Resources */,
 				3AD7ACD320E5BD55000FDBA5 /* Main.storyboard in Resources */,
 				3AD7AD3A20E5D870000FDBA5 /* secondHomeViewController.xib in Resources */,
+				3A49A11120EE02390023C830 /* loginMainViewController.xib in Resources */,
 				3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +620,7 @@
 			files = (
 				3AD7ACD020E5BD55000FDBA5 /* ViewController.m in Sources */,
 				3AD7AD2020E5C517000FDBA5 /* UIImage+HYAdd.m in Sources */,
+				3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */,
 				3AD7AD2F20E5D84C000FDBA5 /* firstHomeViewController.m in Sources */,
 				3AD7ACDB20E5BD55000FDBA5 /* main.m in Sources */,
 				3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */,
@@ -612,6 +635,7 @@
 				3AD7AD3920E5D870000FDBA5 /* secondHomeViewController.m in Sources */,
 				3AD7AD2720E5C9C9000FDBA5 /* LocalData.m in Sources */,
 				3AD7AD2120E5C517000FDBA5 /* UIButton+HYAdd.m in Sources */,
+				3A49A11020EE02390023C830 /* loginMainViewController.m in Sources */,
 				3AD7AD1220E5C484000FDBA5 /* MainTabBarViewController.m in Sources */,
 				3AD7AD2420E5C517000FDBA5 /* UITextField+HYAdd.m in Sources */,
 				3AD7AD0420E5C397000FDBA5 /* HYNetworkHelper.m in Sources */,
