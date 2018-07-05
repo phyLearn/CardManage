@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) HeadMainBtnView *mainBtnView;
 @property (nonatomic, strong) HeadMainBtnView *headMainBtnView;
+@property (nonatomic, assign) CGFloat headViewHeight;
 
 @end
 
@@ -22,13 +23,15 @@
     [super viewDidLoad];
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
-
+    self.headViewHeight = HeadViewHeight;
+    [self.view addSubview:self.headMainBtnView];
 }
 
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.delegate = (id)self;
+
 }
 
 #pragma mark --- UITableViewDelegate ---
@@ -45,13 +48,10 @@
     }
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == 0) {
-        tableView.tableHeaderView = _mainBtnView;
+        tableView.tableHeaderView = self.mainBtnView;
         return _mainBtnView;
     }
     return nil;
@@ -92,8 +92,83 @@
     NSLog(@"点击了自己借");
 }
 
--(HeadMainBtnView *)mainBtnView{
-    if (_mainBtnView) {
+#pragma mark - UIScrollViewDelegate
+//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+//{
+//    if (scrollView == self.mainTableView)
+//    {
+//        CGFloat contentOffsetX = scrollView.contentOffset.x;
+//        NSInteger pageNum = contentOffsetX / AppScreenWidth + 0.5;
+//        NSLog(@"%ld",pageNum);
+//
+//    }
+//}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    if([scrollView isKindOfClass:[scrollView class]]){
+        CGFloat offset_Y = scrollView.contentOffset.y;
+        NSLog(@"offset_Y:%lf",offset_Y);
+        if(offset_Y > 0 && offset_Y < self.headViewHeight){
+            if(offset_Y > self.headViewHeight/2){
+//                [ scrollRectToVisible:CGRectMake(0, 0, AppScreenWidth, AppScreenHeight) animated:YES];
+                [scrollView setContentOffset:CGPointMake(0, 200) animated:YES];
+                
+    
+            }else{
+//                [self.mainTableView scrollRectToVisible:CGRectMake(0, 70, AppScreenWidth, AppScreenHeight) animated:YES];
+                [scrollView setContentOffset:CGPointMake(0,200) animated:YES];
+
+            }
+        }
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat offsetY = self.mainTableView.contentOffset.y;
+    CGFloat originY = 0;
+    CGFloat otherOffsetY = 0;
+    if (offsetY <= self.headViewHeight)
+    {
+        originY = -offsetY;
+        if (offsetY < 0)
+        {
+            otherOffsetY = 0;
+        }else{
+            otherOffsetY = offsetY;
+        }
+    }else{
+        originY = -self.headViewHeight;
+        otherOffsetY = self.headViewHeight;
+    }
+    
+    UITableView* contentView = self.mainTableView;
+    CGPoint offset = CGPointMake(0, otherOffsetY);
+    if ([contentView isKindOfClass:[UITableView class]])
+    {
+        if (contentView.contentOffset.y < self.headViewHeight || offset.y < self.headViewHeight)
+        {
+            self.headMainBtnView.alpha = offset.y / HeadViewHeight;
+            self.mainBtnView.alpha = 1- offset.y / HeadViewHeight;
+            if(self.headMainBtnView.alpha > 0){
+                self.headMainBtnView.hidden = NO;
+            }else{
+                self.headMainBtnView.hidden = YES;
+            }
+            if(self.mainBtnView.alpha <= 0.1){
+                self.mainBtnView.hidden = YES;
+            }else{
+                self.mainBtnView.hidden = NO;
+            }
+            [contentView setContentOffset:offset animated:NO];
+            self.mainTableView.contentOffset = offset;
+        }
+    }
+
+}
+
+- (HeadMainBtnView *)mainBtnView{
+    if (!_mainBtnView) {
         _mainBtnView = [[HeadMainBtnView alloc] initWithFrame:CGRectMake(0, 0, AppScreenWidth, 200) place:@"center"];
         __weak typeof(self) weakSelf = self;
         _mainBtnView.mainBtnActionBlock = ^(NSString *selector){
@@ -105,9 +180,11 @@
     return _mainBtnView;
 }
 
--(HeadMainBtnView *)headMainBtnView{
-    if (_headMainBtnView) {
-        _headMainBtnView = [[HeadMainBtnView alloc] initWithFrame:CGRectMake(0, 0, AppScreenWidth, 200) place:@"center"];
+- (HeadMainBtnView *)headMainBtnView{
+    if (!_headMainBtnView) {
+        _headMainBtnView = [[HeadMainBtnView alloc] initWithFrame:CGRectMake(0, 0, AppScreenWidth, self.headViewHeight) place:@" "];
+        _headMainBtnView.alpha = 0;
+        _headMainBtnView.hidden = YES;
         __weak typeof(self) weakSelf = self;
         _headMainBtnView.mainBtnActionBlock = ^(NSString *selector){
             if([weakSelf respondsToSelector:NSSelectorFromString(selector)]){

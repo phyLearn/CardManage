@@ -6,8 +6,10 @@
 //  Copyright © 2018年 Penghuaiyu. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "HeadMainBtnView.h"
 #import "CustomMainbBtn.h"
+#import "Masonry.h"
 
 @interface HeadMainBtnView()
 
@@ -36,6 +38,7 @@
         [self.backgroundView addSubview:self.mainBtnView];
     }
     
+    UIButton *centerBtn = [[UIButton alloc] init];
     for(int i = 0; i < 4; i++){
         if([place isEqualToString:@"center"]){
             CustomMainbBtn *mainBtn = [CustomMainbBtn markButton];
@@ -51,14 +54,38 @@
             [mainBtn addTarget:self action:@selector(mainBtnAction:) forControlEvents:UIControlEventTouchUpInside];
             [mainBtn setImage:[UIImage imageNamed:contentDict[@"image"]] forState:UIControlStateNormal];
             [self.mainBtnView addSubview:mainBtn];
+            if(i == 0){
+                [mainBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.top.mas_equalTo(self.mainBtnView).offset(10);
+                    make.left.mas_equalTo(self.mainBtnView);
+                    make.bottom.mas_equalTo(self.mainBtnView).offset(0);
+                    make.width.mas_equalTo(self.mainBtnView).multipliedBy(0.25);
+                }];
+            }else if (i == 3){
+                [mainBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.top.mas_equalTo(self.mainBtnView).offset(10);
+                    make.right.mas_equalTo(self.mainBtnView);
+                    make.bottom.mas_equalTo(self.mainBtnView).offset(0);
+                    make.width.mas_equalTo(self.mainBtnView).multipliedBy(0.25);
+                }];
+            }else{
+                [mainBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.top.mas_equalTo(self.mainBtnView).offset(10);
+                    make.left.mas_equalTo(centerBtn.mas_right);
+                    make.bottom.mas_equalTo(self.mainBtnView).offset(0);
+                    make.width.mas_equalTo(self.mainBtnView).multipliedBy(0.25);
+                }];
+            }
+            centerBtn = mainBtn;
+            
             
         }else{
             UIButton *mainBtn = [UIButton buttonWithType:UIButtonTypeCustom];
             NSDictionary *contentDict = self.mainBtnArr[i];
             
-            CGFloat w = 26;
-            CGFloat h = 26;
-            mainBtn.frame = CGRectMake(15 +i * (w + 18), 0, w, h);
+            CGFloat w = 30;
+            CGFloat h = 30;
+            mainBtn.frame = CGRectMake(15 + i*(w+20), 20, w, h);
             mainBtn.tag = i + 1;
             [mainBtn addTarget:self action:@selector(mainBtnAction:) forControlEvents:UIControlEventTouchUpInside];
             [mainBtn setImage:[UIImage imageNamed:contentDict[@"image"]] forState:UIControlStateNormal];
@@ -80,7 +107,7 @@
 - (UIView *)backgroundView{
     if(!_backgroundView){
         _backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-        _backgroundView.backgroundColor = [UIColor blackColor];
+        _backgroundView.backgroundColor = [UIColor colorWithHexString:@"#141419"];
     }
     return _backgroundView;
 }

@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+//判断iponeX的不同逻辑
+#define HeadViewHeight ({\
+int tmp = 0;\
+if ([UIScreen instancesRespondToSelector:@selector(currentMode)]) {\
+if (CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)) {\
+tmp = [UIScreen mainScreen].bounds.size.height * 0.125;\
+}else{\
+tmp = [UIScreen mainScreen].bounds.size.height * 0.110;\
+}\
+}else{\
+tmp = [UIScreen mainScreen].bounds.size.height * 0.110;\
+}\
+tmp;\
+})
+
 typedef void (^mainBtnActionBlock)(NSString *selector);
 
 @interface HeadMainBtnView : UIView
