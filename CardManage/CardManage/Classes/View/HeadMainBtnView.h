@@ -15,6 +15,6 @@ typedef void (^mainBtnActionBlock)(NSString *selector);
 /** 用于跳转 */
 @property (nonatomic, copy) mainBtnActionBlock mainBtnActionBlock;
 
-- (id)initWithFrame:(CGRect)frame location:(NSString *)loc;
+- (id)initWithFrame:(CGRect)frame place:(NSString *)place;
 
 @end
