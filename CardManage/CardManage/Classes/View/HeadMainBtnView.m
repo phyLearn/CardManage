@@ -77,15 +77,12 @@
                 }];
             }
             centerBtn = mainBtn;
-            
-            
         }else{
             UIButton *mainBtn = [UIButton buttonWithType:UIButtonTypeCustom];
             NSDictionary *contentDict = self.mainBtnArr[i];
-            
             CGFloat w = 30;
             CGFloat h = 30;
-            mainBtn.frame = CGRectMake(15 + i*(w+20), 20, w, h);
+            mainBtn.frame = CGRectMake(15 + i*(w+20), 30, w, h);
             mainBtn.tag = i + 1;
             [mainBtn addTarget:self action:@selector(mainBtnAction:) forControlEvents:UIControlEventTouchUpInside];
             [mainBtn setImage:[UIImage imageNamed:contentDict[@"image"]] forState:UIControlStateNormal];

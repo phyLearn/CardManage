@@ -26,13 +26,15 @@
 //    [self.navigationController pushViewController:login animated:YES];
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
-<<<<<<< HEAD
     self.headViewHeight = HeadViewHeight;
     [self.view addSubview:self.headMainBtnView];
-=======
->>>>>>> 2edae0d3a0648db0fe6f08311f847d5d97024468
+    
+    UIButton * billBtn = [[UIButton alloc] initWithFrame:CGRectMake(AppScreenWidth - 80, 0, 80, HeadViewHeight)];
+    [billBtn setTitle:@"账单" forState:UIControlStateNormal];
+    [billBtn addTarget:self action:@selector(billAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:billBtn];
+    
 }
-
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -82,48 +84,43 @@
     
 }
 
+//快速还款
 -(void)fastPayment{
     NSLog(@"点击了快速还款");
 }
 
+//完美还款
 -(void)perfectPayment{
     NSLog(@"点击了完美还款");
 }
 
+//信用卡
 -(void)creditCard{
     NSLog(@"点击了信用卡");
 }
 
+//自己借
 -(void)byMyself{
     NSLog(@"点击了自己借");
 }
 
+//账单
+-(void)billAction{
+    NSLog(@"点击了账单");
+}
+
 #pragma mark - UIScrollViewDelegate
-//- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-//{
-//    if (scrollView == self.mainTableView)
-//    {
-//        CGFloat contentOffsetX = scrollView.contentOffset.x;
-//        NSInteger pageNum = contentOffsetX / AppScreenWidth + 0.5;
-//        NSLog(@"%ld",pageNum);
-//
-//    }
-//}
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     if([scrollView isKindOfClass:[scrollView class]]){
-        CGFloat offset_Y = scrollView.contentOffset.y;
+        CGFloat offset_Y = self.mainTableView.contentOffset.y;
         NSLog(@"offset_Y:%lf",offset_Y);
         if(offset_Y > 0 && offset_Y < self.headViewHeight){
             if(offset_Y > self.headViewHeight/2){
-//                [ scrollRectToVisible:CGRectMake(0, 0, AppScreenWidth, AppScreenHeight) animated:YES];
-                [scrollView setContentOffset:CGPointMake(0, 200) animated:YES];
-                
-    
+                [self.mainTableView setContentOffset:CGPointMake(0, 200) animated:YES];
             }else{
-//                [self.mainTableView scrollRectToVisible:CGRectMake(0, 70, AppScreenWidth, AppScreenHeight) animated:YES];
-                [scrollView setContentOffset:CGPointMake(0,200) animated:YES];
-
+                __weak typeof(self) weakSelf = self;
+                [weakSelf.mainTableView setContentOffset:CGPointMake(0,0) animated:YES];
             }
         }
     }
@@ -154,8 +151,8 @@
     {
         if (contentView.contentOffset.y < self.headViewHeight || offset.y < self.headViewHeight)
         {
-            self.headMainBtnView.alpha = offset.y / HeadViewHeight;
-            self.mainBtnView.alpha = 1- offset.y / HeadViewHeight;
+            self.headMainBtnView.alpha = offset.y / self.headViewHeight;
+            self.mainBtnView.alpha = 1- offset.y / self.headViewHeight;
             if(self.headMainBtnView.alpha > 0){
                 self.headMainBtnView.hidden = NO;
             }else{
