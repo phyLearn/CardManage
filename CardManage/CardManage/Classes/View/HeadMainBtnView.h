@@ -24,12 +24,15 @@ tmp;\
 })
 
 typedef void (^mainBtnActionBlock)(NSString *selector);
+typedef void (^horseRaceBlock)(NSString *selector);
 
 @interface HeadMainBtnView : UIView
 
 /** 用于跳转 */
 @property (nonatomic, copy) mainBtnActionBlock mainBtnActionBlock;
+/** 跑马灯点击 */
+@property (nonatomic, copy) horseRaceBlock horseRaceBlock;
 
-- (id)initWithFrame:(CGRect)frame place:(NSString *)place;
+- (id)initWithFrame:(CGRect)frame place:(NSString *)place messageArr:(NSArray *)messageArr;
 
 @end

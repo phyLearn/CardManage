@@ -43,6 +43,16 @@
 		3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD4020E5DA5D000FDBA5 /* ChangeData.json */; };
 		BAA76285327BC2DA2D371B82 /* libPods-CardManage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */; };
 		C113FFE52D3127B86B61EC29 /* libPods-CardManageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AA99EF15176DD2A8A9CD8C /* libPods-CardManageUITests.a */; };
+		E703C13720F33CFB0043E206 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E703C13520F33CFB0043E206 /* MainTableViewCell.m */; };
+		E703C13820F33CFB0043E206 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703C13620F33CFB0043E206 /* MainTableViewCell.xib */; };
+		E703C13B20F34F210043E206 /* HorseRaceLampView.m in Sources */ = {isa = PBXBuildFile; fileRef = E703C13A20F34F210043E206 /* HorseRaceLampView.m */; };
+		E73AEA6F20F0D31E0034E825 /* CreditcardEvaluatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AEA6D20F0D31E0034E825 /* CreditcardEvaluatCell.m */; };
+		E73AEA7020F0D31E0034E825 /* CreditcardEvaluatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73AEA6E20F0D31E0034E825 /* CreditcardEvaluatCell.xib */; };
+		E791BB8620F44F1E0007915A /* MessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BB8420F44F1E0007915A /* MessageCenterViewController.m */; };
+		E791BB8720F44F1E0007915A /* MessageCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E791BB8520F44F1E0007915A /* MessageCenterViewController.xib */; };
+		E791BB8B20F4924B0007915A /* MessageDetialsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BB8920F4924B0007915A /* MessageDetialsCell.m */; };
+		E791BB8C20F4924B0007915A /* MessageDetialsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E791BB8A20F4924B0007915A /* MessageDetialsCell.xib */; };
+		E791BB9020F492DF0007915A /* MessageDetialsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BB8F20F492DF0007915A /* MessageDetialsModel.m */; };
 		E799406620EB1BC500D3F2FE /* HeadMainBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */; };
 		E799406D20EB1D4100D3F2FE /* CustomMainbBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */; };
 /* End PBXBuildFile section */
@@ -135,6 +145,22 @@
 		AEFAE602D8919708605F369B /* libPods-CardManageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3570EE3700E5965F142D372 /* Pods-CardManageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageTests/Pods-CardManageTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFC08A2A1E8DBF40ED7CD363 /* Pods-CardManageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageTests/Pods-CardManageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E703C13420F33CFB0043E206 /* MainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		E703C13520F33CFB0043E206 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		E703C13620F33CFB0043E206 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		E703C13920F34F210043E206 /* HorseRaceLampView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorseRaceLampView.h; sourceTree = "<group>"; };
+		E703C13A20F34F210043E206 /* HorseRaceLampView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampView.m; sourceTree = "<group>"; };
+		E73AEA6C20F0D31E0034E825 /* CreditcardEvaluatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditcardEvaluatCell.h; sourceTree = "<group>"; };
+		E73AEA6D20F0D31E0034E825 /* CreditcardEvaluatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditcardEvaluatCell.m; sourceTree = "<group>"; };
+		E73AEA6E20F0D31E0034E825 /* CreditcardEvaluatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditcardEvaluatCell.xib; sourceTree = "<group>"; };
+		E791BB8320F44F1E0007915A /* MessageCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCenterViewController.h; sourceTree = "<group>"; };
+		E791BB8420F44F1E0007915A /* MessageCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCenterViewController.m; sourceTree = "<group>"; };
+		E791BB8520F44F1E0007915A /* MessageCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCenterViewController.xib; sourceTree = "<group>"; };
+		E791BB8820F4924B0007915A /* MessageDetialsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageDetialsCell.h; sourceTree = "<group>"; };
+		E791BB8920F4924B0007915A /* MessageDetialsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageDetialsCell.m; sourceTree = "<group>"; };
+		E791BB8A20F4924B0007915A /* MessageDetialsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageDetialsCell.xib; sourceTree = "<group>"; };
+		E791BB8E20F492DF0007915A /* MessageDetialsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageDetialsModel.h; sourceTree = "<group>"; };
+		E791BB8F20F492DF0007915A /* MessageDetialsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageDetialsModel.m; sourceTree = "<group>"; };
 		E799406420EB1BC500D3F2FE /* HeadMainBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadMainBtnView.h; sourceTree = "<group>"; };
 		E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadMainBtnView.m; sourceTree = "<group>"; };
 		E799406B20EB1D4100D3F2FE /* CustomMainbBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMainbBtn.h; sourceTree = "<group>"; };
@@ -280,6 +306,7 @@
 		3AD7AD0520E5C42A000FDBA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E791BB8D20F4925F0007915A /* Model */,
 				E799406320EB1B6E00D3F2FE /* View */,
 				3AD7AD0620E5C42A000FDBA5 /* Business */,
 				3AD7AD0720E5C42A000FDBA5 /* Main */,
@@ -381,6 +408,9 @@
 				3AD7AD2C20E5D84C000FDBA5 /* firstHomeViewController.h */,
 				3AD7AD2D20E5D84C000FDBA5 /* firstHomeViewController.m */,
 				3AD7AD2E20E5D84C000FDBA5 /* firstHomeViewController.xib */,
+				E791BB8320F44F1E0007915A /* MessageCenterViewController.h */,
+				E791BB8420F44F1E0007915A /* MessageCenterViewController.m */,
+				E791BB8520F44F1E0007915A /* MessageCenterViewController.xib */,
 			);
 			path = firstHome;
 			sourceTree = "<group>";
@@ -408,13 +438,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E791BB8D20F4925F0007915A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E791BB8E20F492DF0007915A /* MessageDetialsModel.h */,
+				E791BB8F20F492DF0007915A /* MessageDetialsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E799406320EB1B6E00D3F2FE /* View */ = {
 			isa = PBXGroup;
 			children = (
 				E799406420EB1BC500D3F2FE /* HeadMainBtnView.h */,
 				E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */,
+				E703C13920F34F210043E206 /* HorseRaceLampView.h */,
+				E703C13A20F34F210043E206 /* HorseRaceLampView.m */,
 				E799406B20EB1D4100D3F2FE /* CustomMainbBtn.h */,
 				E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */,
+				E73AEA6C20F0D31E0034E825 /* CreditcardEvaluatCell.h */,
+				E73AEA6D20F0D31E0034E825 /* CreditcardEvaluatCell.m */,
+				E73AEA6E20F0D31E0034E825 /* CreditcardEvaluatCell.xib */,
+				E703C13420F33CFB0043E206 /* MainTableViewCell.h */,
+				E703C13520F33CFB0043E206 /* MainTableViewCell.m */,
+				E703C13620F33CFB0043E206 /* MainTableViewCell.xib */,
+				E791BB8820F4924B0007915A /* MessageDetialsCell.h */,
+				E791BB8920F4924B0007915A /* MessageDetialsCell.m */,
+				E791BB8A20F4924B0007915A /* MessageDetialsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -532,9 +582,13 @@
 				3AD7AD3020E5D84C000FDBA5 /* firstHomeViewController.xib in Resources */,
 				3AD7ACD820E5BD55000FDBA5 /* LaunchScreen.storyboard in Resources */,
 				3AD7AD3F20E5D885000FDBA5 /* thridHomeViewController.xib in Resources */,
+				E791BB8C20F4924B0007915A /* MessageDetialsCell.xib in Resources */,
 				3AD7ACD520E5BD55000FDBA5 /* Assets.xcassets in Resources */,
+				E73AEA7020F0D31E0034E825 /* CreditcardEvaluatCell.xib in Resources */,
+				E703C13820F33CFB0043E206 /* MainTableViewCell.xib in Resources */,
 				3AD7ACD320E5BD55000FDBA5 /* Main.storyboard in Resources */,
 				3AD7AD3A20E5D870000FDBA5 /* secondHomeViewController.xib in Resources */,
+				E791BB8720F44F1E0007915A /* MessageCenterViewController.xib in Resources */,
 				3A49A11120EE02390023C830 /* loginMainViewController.xib in Resources */,
 				3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */,
 			);
@@ -623,15 +677,21 @@
 				3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */,
 				3AD7AD2F20E5D84C000FDBA5 /* firstHomeViewController.m in Sources */,
 				3AD7ACDB20E5BD55000FDBA5 /* main.m in Sources */,
+				E791BB8B20F4924B0007915A /* MessageDetialsCell.m in Sources */,
 				3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */,
+				E703C13720F33CFB0043E206 /* MainTableViewCell.m in Sources */,
 				3AD7AD0320E5C397000FDBA5 /* HYNetworkCache.m in Sources */,
 				3AD7AD2220E5C517000FDBA5 /* NSTimer+addition.m in Sources */,
+				E791BB8620F44F1E0007915A /* MessageCenterViewController.m in Sources */,
 				E799406620EB1BC500D3F2FE /* HeadMainBtnView.m in Sources */,
 				3AD7AD1020E5C484000FDBA5 /* AppBaseViewController.m in Sources */,
 				3AD7AD3420E5D85F000FDBA5 /* fourHomeViewController.m in Sources */,
+				E791BB9020F492DF0007915A /* MessageDetialsModel.m in Sources */,
+				E73AEA6F20F0D31E0034E825 /* CreditcardEvaluatCell.m in Sources */,
 				3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */,
 				3AD7AD1120E5C484000FDBA5 /* MainNavigationController.m in Sources */,
 				3AD7AD3E20E5D885000FDBA5 /* thridHomeViewController.m in Sources */,
+				E703C13B20F34F210043E206 /* HorseRaceLampView.m in Sources */,
 				3AD7AD3920E5D870000FDBA5 /* secondHomeViewController.m in Sources */,
 				3AD7AD2720E5C9C9000FDBA5 /* LocalData.m in Sources */,
 				3AD7AD2120E5C517000FDBA5 /* UIButton+HYAdd.m in Sources */,

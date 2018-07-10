@@ -6,11 +6,12 @@
     },
     {
       "idiom" : "universal",
+      "filename" : "xinyongka_45x45_@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "jsk_25x25_@3x.png",
+      "filename" : "xinyongka_45x45_@3x.png",
       "scale" : "3x"
     }
   ],

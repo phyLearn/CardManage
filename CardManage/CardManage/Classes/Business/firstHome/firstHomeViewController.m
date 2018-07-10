@@ -9,12 +9,15 @@
 #import "firstHomeViewController.h"
 #import "loginMainViewController.h"
 #import "HeadMainBtnView.h"
+#import "CreditcardEvaluatCell.h"
+#import "MessageCenterViewController.h"
 
-@interface firstHomeViewController ()
+@interface firstHomeViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
 @property (nonatomic, strong) HeadMainBtnView *mainBtnView;
 @property (nonatomic, strong) HeadMainBtnView *headMainBtnView;
 @property (nonatomic, assign) CGFloat headViewHeight;
+@property (nonatomic, strong) NSMutableArray * messageArr;
 
 @end
 
@@ -34,6 +37,8 @@
     [billBtn addTarget:self action:@selector(billAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:billBtn];
     
+    self.mainTableView.tableHeaderView = self.mainBtnView;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -44,25 +49,12 @@
 
 #pragma mark --- UITableViewDelegate ---
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return 60;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    if (section == 0) {
-        return 200;
+    if (indexPath.row == 0) {
+        return 120;
     }else{
-        return 0;
+        return 90;
     }
-}
-
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    if (section == 0) {
-        tableView.tableHeaderView = self.mainBtnView;
-        return _mainBtnView;
-    }
-    return nil;
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -70,14 +62,23 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *tipCellIdentifier = @"tipCellIdentifier";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tipCellIdentifier];
-    if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:tipCellIdentifier];
+    if (indexPath.row == 0) {
+        NSString * assetsIdentifer = @"CreditcardEvaluatCell";
+        CreditcardEvaluatCell *cell = [tableView dequeueReusableCellWithIdentifier:assetsIdentifer];
+        if (!cell) {
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"CreditcardEvaluatCell"  owner:self options:nil] lastObject];
+        }
+        return cell;
+    }else{
+        static NSString *tipCellIdentifier = @"";
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tipCellIdentifier];
+        if (cell == nil){
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                          reuseIdentifier:tipCellIdentifier];
+        }
+        return cell;
     }
-    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -109,18 +110,23 @@
     NSLog(@"点击了账单");
 }
 
-#pragma mark - UIScrollViewDelegate
+//跑马灯
+-(void)horseRaceAction{
+    MessageCenterViewController * ctl = [[MessageCenterViewController alloc] initWithNibName:@"MessageCenterViewController" bundle:nil];
+    ctl.messageTextArr = self.messageArr;
+    [self.navigationController pushViewController:ctl animated:YES];
+}
 
+#pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     if([scrollView isKindOfClass:[scrollView class]]){
         CGFloat offset_Y = self.mainTableView.contentOffset.y;
         NSLog(@"offset_Y:%lf",offset_Y);
         if(offset_Y > 0 && offset_Y < self.headViewHeight){
             if(offset_Y > self.headViewHeight/2){
-                [self.mainTableView setContentOffset:CGPointMake(0, 200) animated:YES];
+                [self.mainTableView setContentOffset:CGPointMake(0, 0) animated:YES];
             }else{
-                __weak typeof(self) weakSelf = self;
-                [weakSelf.mainTableView setContentOffset:CGPointMake(0,0) animated:YES];
+                [self.mainTableView setContentOffset:CGPointMake(0, self.headViewHeight) animated:YES];
             }
         }
     }
@@ -172,9 +178,20 @@
 
 - (HeadMainBtnView *)mainBtnView{
     if (!_mainBtnView) {
-        _mainBtnView = [[HeadMainBtnView alloc] initWithFrame:CGRectMake(0, 0, AppScreenWidth, 200) place:@"center"];
+        NSMutableArray * messageArr = [NSMutableArray array];
+        for (NSDictionary * dic in self.messageArr) {
+            if ([dic objectForKey:@"message"]) {
+                [messageArr addObject:[dic objectForKey:@"message"]];
+            }
+        }
+        _mainBtnView = [[HeadMainBtnView alloc] initWithFrame:CGRectMake(0, 0, AppScreenWidth, 180) place:@"center" messageArr:messageArr] ;
         __weak typeof(self) weakSelf = self;
         _mainBtnView.mainBtnActionBlock = ^(NSString *selector){
+            if([weakSelf respondsToSelector:NSSelectorFromString(selector)]){
+                [weakSelf performSelector:NSSelectorFromString(selector) withObject:nil];
+            }
+        };
+        _mainBtnView.horseRaceBlock = ^(NSString *selector) {
             if([weakSelf respondsToSelector:NSSelectorFromString(selector)]){
                 [weakSelf performSelector:NSSelectorFromString(selector) withObject:nil];
             }
@@ -185,7 +202,7 @@
 
 - (HeadMainBtnView *)headMainBtnView{
     if (!_headMainBtnView) {
-        _headMainBtnView = [[HeadMainBtnView alloc] initWithFrame:CGRectMake(0, 0, AppScreenWidth, self.headViewHeight) place:@" "];
+        _headMainBtnView = [[HeadMainBtnView alloc] initWithFrame:CGRectMake(0, 0, AppScreenWidth, self.headViewHeight) place:@" " messageArr:nil];
         _headMainBtnView.alpha = 0;
         _headMainBtnView.hidden = YES;
         __weak typeof(self) weakSelf = self;
@@ -196,6 +213,17 @@
         };
     }
     return _headMainBtnView;
+}
+
+- (NSMutableArray *)messageArr{
+    if(!_messageArr){
+        _messageArr = @[
+                        @{@"time":@"2018-1-1 20:19",@"message":@"新华社北京7月10日电（记者王卓伦、赵修知）中阿合作论坛第八届部长级会议10日在人民大会堂开幕。国家主席习近平出席开幕式并发表题为《携手推进新时代中阿战略伙伴关系》的重要讲话，宣布中阿双方一致同意，建立全面合作、共同发展、面向未来的中阿战略伙伴关系。"},
+                        @{@"time":@"2018-5-1 9:01",@"message":@"上午10时许，会议正式开幕。在热烈的掌声中，习近平走上讲台，发表讲话。"},
+                        @{@"time":@"2018-8-1 12:09",@"message":@"增进战略互信。要坚持对话协商，坚守主权原则，倡导包容性和解，反对恐怖主义。习近平宣布，中方将设立“以产业振兴带动经济重建专项计划”，并向有关阿拉伯国家提供人道主义援助。"}
+                        ];
+    }
+    return _messageArr;
 }
 
 @end
