@@ -41,6 +41,7 @@
 		3AD7AD3E20E5D885000FDBA5 /* thridHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3C20E5D885000FDBA5 /* thridHomeViewController.m */; };
 		3AD7AD3F20E5D885000FDBA5 /* thridHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3D20E5D885000FDBA5 /* thridHomeViewController.xib */; };
 		3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD4020E5DA5D000FDBA5 /* ChangeData.json */; };
+		3AFAEC8720EF01C900B58E32 /* updownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAEC8620EF01C900B58E32 /* updownView.m */; };
 		BAA76285327BC2DA2D371B82 /* libPods-CardManage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */; };
 		C113FFE52D3127B86B61EC29 /* libPods-CardManageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AA99EF15176DD2A8A9CD8C /* libPods-CardManageUITests.a */; };
 		E799406620EB1BC500D3F2FE /* HeadMainBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */; };
@@ -129,6 +130,8 @@
 		3AD7AD3C20E5D885000FDBA5 /* thridHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thridHomeViewController.m; sourceTree = "<group>"; };
 		3AD7AD3D20E5D885000FDBA5 /* thridHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = thridHomeViewController.xib; sourceTree = "<group>"; };
 		3AD7AD4020E5DA5D000FDBA5 /* ChangeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChangeData.json; sourceTree = "<group>"; };
+		3AFAEC8520EF01C900B58E32 /* updownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = updownView.h; sourceTree = "<group>"; };
+		3AFAEC8620EF01C900B58E32 /* updownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = updownView.m; sourceTree = "<group>"; };
 		43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AA99EF15176DD2A8A9CD8C /* libPods-CardManageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8635DC11CBC93372943E274A /* Pods-CardManageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageUITests/Pods-CardManageUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 			children = (
 				3A49A11920EE0EFF0023C830 /* likeLoginBtn.h */,
 				3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */,
+				3AFAEC8520EF01C900B58E32 /* updownView.h */,
+				3AFAEC8620EF01C900B58E32 /* updownView.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				3AD7AD0420E5C397000FDBA5 /* HYNetworkHelper.m in Sources */,
 				E799406D20EB1D4100D3F2FE /* CustomMainbBtn.m in Sources */,
 				3AD7ACCD20E5BD55000FDBA5 /* AppDelegate.m in Sources */,
+				3AFAEC8720EF01C900B58E32 /* updownView.m in Sources */,
 				3AD7AD2320E5C517000FDBA5 /* UIView+HYAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

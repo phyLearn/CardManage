@@ -26,11 +26,8 @@
 //    [self.navigationController pushViewController:login animated:YES];
     self.mainTableView.delegate = self;
     self.mainTableView.dataSource = self;
-<<<<<<< HEAD
     self.headViewHeight = HeadViewHeight;
     [self.view addSubview:self.headMainBtnView];
-=======
->>>>>>> 2edae0d3a0648db0fe6f08311f847d5d97024468
 }
 
 
@@ -38,6 +35,11 @@
     [super viewWillAppear:animated];
     self.navigationController.delegate = (id)self;
 
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
 }
 
 #pragma mark --- UITableViewDelegate ---

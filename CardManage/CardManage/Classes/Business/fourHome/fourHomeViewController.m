@@ -9,6 +9,7 @@
 #import "fourHomeViewController.h"
 
 @interface fourHomeViewController ()
+@property (weak, nonatomic) IBOutlet UIView *headBtnView;
 
 @end
 
@@ -16,6 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.delegate = (id)self;
+    
 }
 
 #pragma mark --- 配置相关 ---
