@@ -19,6 +19,6 @@
 #import "UIViewController+Hidden.h"
 #pragma mark 调用第三方库的头文件
 #import "YYKit.h"
-
+#import "Masonry.h"
 
 #endif /* appHead_h */

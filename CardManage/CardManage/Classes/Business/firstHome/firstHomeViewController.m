@@ -31,8 +31,6 @@
     self.mainTableView.dataSource = self;
     self.headViewHeight = HeadViewHeight;
     [self.view addSubview:self.headMainBtnView];
-<<<<<<< HEAD
-=======
     
     UIButton * billBtn = [[UIButton alloc] initWithFrame:CGRectMake(AppScreenWidth - 80, 0, 80, HeadViewHeight)];
     [billBtn setTitle:@"账单" forState:UIControlStateNormal];
@@ -40,8 +38,6 @@
     [self.view addSubview:billBtn];
     
     self.mainTableView.tableHeaderView = self.mainBtnView;
-    
->>>>>>> d9a54ea4555eef58208c11af67b8dfadcd883aff
 }
 
 - (void)viewWillAppear:(BOOL)animated{

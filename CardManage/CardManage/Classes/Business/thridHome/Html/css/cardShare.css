@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after{
+    clear:both;
+    display:block;
+    height:0;
+    content:'';
+}
+
+.cardShare{
+	background: #141419;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container{
+	width: 80%;
+	height: 120px;
+	display: inline-block;
+	left: 10%;
+	top: 30px;
+}
+
+.slideImg{
+	width: 100%;
+	height: auto;
+}
+
+.cardShare-headImage{
+	margin-top: 50px;
+	width: 50%;
+	height: 300px;
+	left: -50%;
+	transform: translateX(50%);
+	overflow: hidden;
+}
+
+.cardShare-headImage-img{
+	display: inline-block;
+	width: 100%;
+	left: -50%；
+	transform:translateX(50%);
+	float: left;
+}
