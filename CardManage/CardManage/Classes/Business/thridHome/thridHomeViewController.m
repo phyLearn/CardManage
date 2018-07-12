@@ -45,6 +45,7 @@
         _webView = [[WKWebView alloc] init];
         _webView.UIDelegate = self;
         _webView.navigationDelegate = self;
+        _webView.scrollView.bounces = NO;
         [self.view addSubview:_webView];
         NSString *path = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
         NSURL *baseURL = [NSURL fileURLWithPath:path];
