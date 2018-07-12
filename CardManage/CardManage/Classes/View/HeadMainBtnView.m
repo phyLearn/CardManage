@@ -10,32 +10,46 @@
 #import "HeadMainBtnView.h"
 #import "CustomMainbBtn.h"
 #import "Masonry.h"
+#import "HorseRaceLampView.h"
 
-@interface HeadMainBtnView()
+@interface HeadMainBtnView()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIView * backgroundView;
 @property (nonatomic, strong) UIView * mainBtnView;
-@property (nonatomic, strong) NSMutableArray * mainBtnArr;
+@property (nonatomic, strong) NSArray * mainBtnArr;
 
 @end
 
 
 @implementation HeadMainBtnView
 
--(id)initWithFrame:(CGRect)frame place:(NSString *)place{
+-(id)initWithFrame:(CGRect)frame place:(NSString *)place messageArr:(NSArray *)messageArr{
     self = [super initWithFrame:frame];
     if (self) {
-        [self newMainButtonWithPlace:place];
+        [self newMainButtonWithPlace:place withMessageArr:messageArr];
         [self addSubview:self.backgroundView];
     }
     return self;
 }
 
--(void)newMainButtonWithPlace:(NSString *)place{
+-(void)newMainButtonWithPlace:(NSString *)place withMessageArr:(NSArray *)messageArr{
     if ([place isEqualToString:@"center"]) {
-        self.mainBtnView = [[UIView alloc] initWithFrame:CGRectMake(15, 50, self.frame.size.width - 15*2, 100)];
+        self.mainBtnView = [[UIView alloc] initWithFrame:CGRectMake(15, 60, self.frame.size.width - 15*2, 100)];
         [self.mainBtnView setBackgroundColor:[UIColor clearColor]];
         [self.backgroundView addSubview:self.mainBtnView];
+        
+        HorseRaceLampView * horseRaceView = [[HorseRaceLampView alloc] initWithFrame:CGRectMake(0, 150, self.frame.size.width, 30)];
+        horseRaceView.messageTextArr = messageArr;
+        [self.backgroundView addSubview:horseRaceView];
+        //单击的手势
+        UITapGestureRecognizer *tapRecognize = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handleTap)];
+        tapRecognize.numberOfTapsRequired = 1;
+        tapRecognize.delegate = self;
+        [tapRecognize setEnabled :YES];
+        [tapRecognize delaysTouchesBegan];
+        [tapRecognize cancelsTouchesInView];
+        [horseRaceView addGestureRecognizer:tapRecognize];
+        
     }
     
     UIButton *centerBtn = [[UIButton alloc] init];
@@ -77,15 +91,12 @@
                 }];
             }
             centerBtn = mainBtn;
-            
-            
         }else{
             UIButton *mainBtn = [UIButton buttonWithType:UIButtonTypeCustom];
             NSDictionary *contentDict = self.mainBtnArr[i];
-            
             CGFloat w = 30;
             CGFloat h = 30;
-            mainBtn.frame = CGRectMake(15 + i*(w+20), 20, w, h);
+            mainBtn.frame = CGRectMake(15 + i*(w+20), 30, w, h);
             mainBtn.tag = i + 1;
             [mainBtn addTarget:self action:@selector(mainBtnAction:) forControlEvents:UIControlEventTouchUpInside];
             [mainBtn setImage:[UIImage imageNamed:contentDict[@"image"]] forState:UIControlStateNormal];
@@ -103,6 +114,12 @@
     }
 }
 
+- (void)handleTap{
+    if (self.horseRaceBlock) {
+        self.horseRaceBlock(@"horseRaceAction");
+    }
+}
+
 #pragma mark --- 初始化 ---
 - (UIView *)backgroundView{
     if(!_backgroundView){
@@ -117,7 +134,7 @@
         _mainBtnArr = @[
                         @{@"title":@"急速还款",@"image":@"haikuanx_35x35_",@"selector":@"fastPayment"},
                         @{@"title":@"完美还款",@"image":@"haikuanrilix_35x35_",@"selector":@"perfectPayment"},
-                        @{@"title":@"信用卡办理",@"image":@"jsk_25x25_",@"selector":@"creditCard"},
+                        @{@"title":@"信用卡办理",@"image":@"xinyongka_45x45_",@"selector":@"creditCard"},
                         @{@"title":@"自己借",@"image":@"zijiejie_45x45_",@"selector":@"byMyself"}
                         ];
     }
