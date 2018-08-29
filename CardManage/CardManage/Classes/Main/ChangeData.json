@@ -13,28 +13,16 @@
             "baseSet":
             [
              {
-                 "vcName": "firstHomeViewController",
+                 "vcName": "homeViewController",
                  "title": "首页",
                  "imageName": "shouyeTab_25x25_",
                  "selectImageName":"shouyeTabSelect_25x25_"
              },
              {
-                 "vcName": "secondHomeViewController",
-                 "title": "授信",
+                 "vcName": "myViewController",
+                 "title": "我的",
                  "imageName": "shouxinTab_25x25_",
                  "selectImageName":"shouxinTabSelect_25x25_"
-             },
-             {
-                 "vcName": "thridHomeViewController",
-                 "title": "分享",
-                 "imageName": "shareTab_25x25_",
-                 "selectImageName":"shareTabSelect_25x25_"
-             },
-             {
-                 "vcName": "fourHomeViewController",
-                 "title": "我的",
-                 "imageName": "wodeTab_25x25_",
-                 "selectImageName":"wodeTabSelect_25x25_"
              }
              ],
             "appearance":

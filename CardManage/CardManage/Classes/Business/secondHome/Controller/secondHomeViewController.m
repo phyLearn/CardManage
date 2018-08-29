@@ -16,13 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
     self.navigationController.delegate = (id)self;
+    [[appRoute shared] loginAbountWithVC:self Complete:^{
+        
+    }];
 }
-
-#pragma mark --- 配置相关 ---
 
 @end

@@ -14,7 +14,6 @@
 - (id)initWithFrame:(CGRect)frame withInfoDict:(NSDictionary *)infoDict{
     self = [super initWithFrame:frame];
     if(self){
-        NSString *imageName = infoDict[@"imageName"];
     }
     return self;
 }

@@ -11,13 +11,11 @@
 #define commonColor [UIColor grayColor]
 #define selectColor [UIColor redColor]
 
-#define myCornerRadius 5
 @implementation likeLoginBtn
 
 - (void)awakeFromNib{
     [super awakeFromNib];
     
-    self.layer.cornerRadius = myCornerRadius;
     [self setBackgroundColor:commonColor];
     
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

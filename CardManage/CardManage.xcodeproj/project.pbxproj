@@ -8,14 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		31EB0C60A3B74188CEEB07C8 /* libPods-CardManageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFAE602D8919708605F369B /* libPods-CardManageTests.a */; };
-		3A49A11020EE02390023C830 /* loginMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A49A10E20EE02390023C830 /* loginMainViewController.m */; };
-		3A49A11120EE02390023C830 /* loginMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A49A10F20EE02390023C830 /* loginMainViewController.xib */; };
+		3A41AF932136617000C8F5EE /* appRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AF922136617000C8F5EE /* appRoute.m */; };
+		3A41AF97213664B700C8F5EE /* AppFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AF96213664B700C8F5EE /* AppFMDB.m */; };
+		3A41AF9A2136661200C8F5EE /* AppDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AF992136661200C8F5EE /* AppDatabase.m */; };
+		3A41AF9F2136778900C8F5EE /* loginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AF9E2136778900C8F5EE /* loginMainView.m */; };
+		3A41AFA2213677F300C8F5EE /* loginLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AFA1213677F300C8F5EE /* loginLogicManager.m */; };
+		3A41AFA42136788C00C8F5EE /* loginMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41AFA32136788C00C8F5EE /* loginMainView.xib */; };
+		3A41AFAB2136801300C8F5EE /* loginMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AFA92136801300C8F5EE /* loginMainViewController.m */; };
+		3A41AFAC2136801300C8F5EE /* loginMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41AFAA2136801300C8F5EE /* loginMainViewController.xib */; };
+		3A41AFAF2136987E00C8F5EE /* newsLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AFAE2136987E00C8F5EE /* newsLoginView.m */; };
+		3A41AFB22136989700C8F5EE /* passwordLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AFB12136989700C8F5EE /* passwordLoginView.m */; };
+		3A41AFB4213698D200C8F5EE /* newsLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41AFB3213698D200C8F5EE /* newsLoginView.xib */; };
+		3A41AFB6213698DD00C8F5EE /* passwordLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41AFB5213698DD00C8F5EE /* passwordLoginView.xib */; };
+		3A41AFB92136B3D500C8F5EE /* likeLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */; };
 		3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */; };
 		3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6A920EB16D600E54255 /* appAppearInfo.m */; };
 		3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */; };
-		3ACA41A820F784D3004AF587 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA41A520F784D2004AF587 /* css */; };
-		3ACA41A920F784D3004AF587 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA41A620F784D2004AF587 /* index.html */; };
-		3ACA41AA20F784D3004AF587 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 3ACA41A720F784D3004AF587 /* js */; };
+		3AB48B742135312C007F268F /* homeMainView+addView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B732135312C007F268F /* homeMainView+addView.m */; };
+		3AB48B82213543E8007F268F /* myViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB48B79213543E8007F268F /* myViewController.xib */; };
+		3AB48B83213543E8007F268F /* secondHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB48B7C213543E8007F268F /* secondHomeViewController.xib */; };
+		3AB48B84213543E8007F268F /* myViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B7D213543E8007F268F /* myViewController.m */; };
+		3AB48B85213543E8007F268F /* secondHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B7E213543E8007F268F /* secondHomeViewController.m */; };
+		3AB48B892135455C007F268F /* myLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B882135455C007F268F /* myLogicManager.m */; };
+		3AB48B8C213545B3007F268F /* myMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B8B213545B3007F268F /* myMainView.m */; };
+		3AB48B9021354838007F268F /* myMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B8E21354838007F268F /* myMainCell.m */; };
+		3AB48B9121354838007F268F /* myMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB48B8F21354838007F268F /* myMainCell.xib */; };
+		3AB48B9421354C90007F268F /* myMainCelllListBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B9321354C90007F268F /* myMainCelllListBtn.m */; };
+		3AB48B9621354C9E007F268F /* myMainCelllListBtn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB48B9521354C9E007F268F /* myMainCelllListBtn.xib */; };
+		3AB48B9F213563DF007F268F /* myMainView+addView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B9E213563DF007F268F /* myMainView+addView.m */; };
 		3AD7ACCD20E5BD55000FDBA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7ACCC20E5BD55000FDBA5 /* AppDelegate.m */; };
 		3AD7ACD020E5BD55000FDBA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7ACCF20E5BD55000FDBA5 /* ViewController.m */; };
 		3AD7ACD320E5BD55000FDBA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7ACD120E5BD55000FDBA5 /* Main.storyboard */; };
@@ -35,30 +55,19 @@
 		3AD7AD2320E5C517000FDBA5 /* UIView+HYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD1D20E5C517000FDBA5 /* UIView+HYAdd.m */; };
 		3AD7AD2420E5C517000FDBA5 /* UITextField+HYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD1F20E5C517000FDBA5 /* UITextField+HYAdd.m */; };
 		3AD7AD2720E5C9C9000FDBA5 /* LocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD2620E5C9C9000FDBA5 /* LocalData.m */; };
-		3AD7AD2F20E5D84C000FDBA5 /* firstHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD2D20E5D84C000FDBA5 /* firstHomeViewController.m */; };
-		3AD7AD3020E5D84C000FDBA5 /* firstHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD2E20E5D84C000FDBA5 /* firstHomeViewController.xib */; };
-		3AD7AD3420E5D85F000FDBA5 /* fourHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3220E5D85F000FDBA5 /* fourHomeViewController.m */; };
-		3AD7AD3520E5D85F000FDBA5 /* fourHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3320E5D85F000FDBA5 /* fourHomeViewController.xib */; };
-		3AD7AD3920E5D870000FDBA5 /* secondHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3720E5D870000FDBA5 /* secondHomeViewController.m */; };
-		3AD7AD3A20E5D870000FDBA5 /* secondHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3820E5D870000FDBA5 /* secondHomeViewController.xib */; };
-		3AD7AD3E20E5D885000FDBA5 /* thridHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3C20E5D885000FDBA5 /* thridHomeViewController.m */; };
-		3AD7AD3F20E5D885000FDBA5 /* thridHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD3D20E5D885000FDBA5 /* thridHomeViewController.xib */; };
 		3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AD7AD4020E5DA5D000FDBA5 /* ChangeData.json */; };
+		3AF59E6C21350450005D4280 /* baseLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59E6B21350450005D4280 /* baseLogicManager.m */; };
+		3AF59E7E21350EF1005D4280 /* homeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59E6E21350EF0005D4280 /* homeMainView.m */; };
+		3AF59E7F21350EF1005D4280 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59E7121350EF1005D4280 /* homeViewController.m */; };
+		3AF59E8021350EF1005D4280 /* homeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF59E7221350EF1005D4280 /* homeViewController.xib */; };
+		3AF59E8521350EF1005D4280 /* homeLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59E7C21350EF1005D4280 /* homeLogicManager.m */; };
+		3AF59E8A2135115B005D4280 /* homeMainViewFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59E882135115B005D4280 /* homeMainViewFirstCell.m */; };
+		3AF59E8B2135115B005D4280 /* homeMainViewFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF59E892135115B005D4280 /* homeMainViewFirstCell.xib */; };
+		3AF59E8F2135117B005D4280 /* homeMainViewSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59E8D2135117B005D4280 /* homeMainViewSecondCell.m */; };
+		3AF59E902135117B005D4280 /* homeMainViewSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF59E8E2135117B005D4280 /* homeMainViewSecondCell.xib */; };
 		3AFAEC8720EF01C900B58E32 /* updownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAEC8620EF01C900B58E32 /* updownView.m */; };
 		BAA76285327BC2DA2D371B82 /* libPods-CardManage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */; };
 		C113FFE52D3127B86B61EC29 /* libPods-CardManageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AA99EF15176DD2A8A9CD8C /* libPods-CardManageUITests.a */; };
-		E703C13720F33CFB0043E206 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E703C13520F33CFB0043E206 /* MainTableViewCell.m */; };
-		E703C13820F33CFB0043E206 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E703C13620F33CFB0043E206 /* MainTableViewCell.xib */; };
-		E703C13B20F34F210043E206 /* HorseRaceLampView.m in Sources */ = {isa = PBXBuildFile; fileRef = E703C13A20F34F210043E206 /* HorseRaceLampView.m */; };
-		E73AEA6F20F0D31E0034E825 /* CreditcardEvaluatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E73AEA6D20F0D31E0034E825 /* CreditcardEvaluatCell.m */; };
-		E73AEA7020F0D31E0034E825 /* CreditcardEvaluatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E73AEA6E20F0D31E0034E825 /* CreditcardEvaluatCell.xib */; };
-		E791BB8620F44F1E0007915A /* MessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BB8420F44F1E0007915A /* MessageCenterViewController.m */; };
-		E791BB8720F44F1E0007915A /* MessageCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E791BB8520F44F1E0007915A /* MessageCenterViewController.xib */; };
-		E791BB8B20F4924B0007915A /* MessageDetialsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BB8920F4924B0007915A /* MessageDetialsCell.m */; };
-		E791BB8C20F4924B0007915A /* MessageDetialsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E791BB8A20F4924B0007915A /* MessageDetialsCell.xib */; };
-		E791BB9020F492DF0007915A /* MessageDetialsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E791BB8F20F492DF0007915A /* MessageDetialsModel.m */; };
-		E799406620EB1BC500D3F2FE /* HeadMainBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */; };
-		E799406D20EB1D4100D3F2FE /* CustomMainbBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,18 +90,57 @@
 /* Begin PBXFileReference section */
 		13CB3D416374B6D195D80593 /* Pods-CardManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManage/Pods-CardManage.debug.xcconfig"; sourceTree = "<group>"; };
 		23D8AB0A9E4DEAD257CC1245 /* Pods-CardManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManage/Pods-CardManage.release.xcconfig"; sourceTree = "<group>"; };
-		3A49A10D20EE02390023C830 /* loginMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginMainViewController.h; sourceTree = "<group>"; };
-		3A49A10E20EE02390023C830 /* loginMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginMainViewController.m; sourceTree = "<group>"; };
-		3A49A10F20EE02390023C830 /* loginMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginMainViewController.xib; sourceTree = "<group>"; };
+		3A41AF912136617000C8F5EE /* appRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = appRoute.h; sourceTree = "<group>"; };
+		3A41AF922136617000C8F5EE /* appRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appRoute.m; sourceTree = "<group>"; };
+		3A41AF95213664B700C8F5EE /* AppFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppFMDB.h; sourceTree = "<group>"; };
+		3A41AF96213664B700C8F5EE /* AppFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppFMDB.m; sourceTree = "<group>"; };
+		3A41AF982136661200C8F5EE /* AppDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDatabase.h; sourceTree = "<group>"; };
+		3A41AF992136661200C8F5EE /* AppDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDatabase.m; sourceTree = "<group>"; };
+		3A41AF9C213676D000C8F5EE /* loginImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginImport.h; sourceTree = "<group>"; };
+		3A41AF9D2136778900C8F5EE /* loginMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginMainView.h; sourceTree = "<group>"; };
+		3A41AF9E2136778900C8F5EE /* loginMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginMainView.m; sourceTree = "<group>"; };
+		3A41AFA0213677F300C8F5EE /* loginLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginLogicManager.h; sourceTree = "<group>"; };
+		3A41AFA1213677F300C8F5EE /* loginLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginLogicManager.m; sourceTree = "<group>"; };
+		3A41AFA32136788C00C8F5EE /* loginMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginMainView.xib; sourceTree = "<group>"; };
+		3A41AFA82136801300C8F5EE /* loginMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loginMainViewController.h; sourceTree = "<group>"; };
+		3A41AFA92136801300C8F5EE /* loginMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loginMainViewController.m; sourceTree = "<group>"; };
+		3A41AFAA2136801300C8F5EE /* loginMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginMainViewController.xib; sourceTree = "<group>"; };
+		3A41AFAD2136987E00C8F5EE /* newsLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = newsLoginView.h; sourceTree = "<group>"; };
+		3A41AFAE2136987E00C8F5EE /* newsLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newsLoginView.m; sourceTree = "<group>"; };
+		3A41AFB02136989700C8F5EE /* passwordLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = passwordLoginView.h; sourceTree = "<group>"; };
+		3A41AFB12136989700C8F5EE /* passwordLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = passwordLoginView.m; sourceTree = "<group>"; };
+		3A41AFB3213698D200C8F5EE /* newsLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = newsLoginView.xib; sourceTree = "<group>"; };
+		3A41AFB5213698DD00C8F5EE /* passwordLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = passwordLoginView.xib; sourceTree = "<group>"; };
+		3A41AFB72136B3D500C8F5EE /* likeLoginTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = likeLoginTextField.h; sourceTree = "<group>"; };
+		3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = likeLoginTextField.m; sourceTree = "<group>"; };
+		3A41AFBB2136DB9800C8F5EE /* RouteImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteImport.h; sourceTree = "<group>"; };
 		3A49A11920EE0EFF0023C830 /* likeLoginBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = likeLoginBtn.h; sourceTree = "<group>"; };
 		3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = likeLoginBtn.m; sourceTree = "<group>"; };
 		3A57B6A820EB16D600E54255 /* appAppearInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = appAppearInfo.h; sourceTree = "<group>"; };
 		3A57B6A920EB16D600E54255 /* appAppearInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appAppearInfo.m; sourceTree = "<group>"; };
 		3A57B6AB20EB1B8900E54255 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
 		3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hidden.m"; sourceTree = "<group>"; };
-		3ACA41A520F784D2004AF587 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; path = css; sourceTree = "<group>"; };
-		3ACA41A620F784D2004AF587 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		3ACA41A720F784D3004AF587 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		3AB48B722135312C007F268F /* homeMainView+addView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "homeMainView+addView.h"; sourceTree = "<group>"; };
+		3AB48B732135312C007F268F /* homeMainView+addView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "homeMainView+addView.m"; sourceTree = "<group>"; };
+		3AB48B79213543E8007F268F /* myViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myViewController.xib; sourceTree = "<group>"; };
+		3AB48B7A213543E8007F268F /* secondHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondHomeViewController.h; sourceTree = "<group>"; };
+		3AB48B7B213543E8007F268F /* myViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myViewController.h; sourceTree = "<group>"; };
+		3AB48B7C213543E8007F268F /* secondHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = secondHomeViewController.xib; sourceTree = "<group>"; };
+		3AB48B7D213543E8007F268F /* myViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myViewController.m; sourceTree = "<group>"; };
+		3AB48B7E213543E8007F268F /* secondHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondHomeViewController.m; sourceTree = "<group>"; };
+		3AB48B86213544B9007F268F /* myImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myImport.h; sourceTree = "<group>"; };
+		3AB48B872135455C007F268F /* myLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myLogicManager.h; sourceTree = "<group>"; };
+		3AB48B882135455C007F268F /* myLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myLogicManager.m; sourceTree = "<group>"; };
+		3AB48B8A213545B3007F268F /* myMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myMainView.h; sourceTree = "<group>"; };
+		3AB48B8B213545B3007F268F /* myMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myMainView.m; sourceTree = "<group>"; };
+		3AB48B8D21354838007F268F /* myMainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myMainCell.h; sourceTree = "<group>"; };
+		3AB48B8E21354838007F268F /* myMainCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myMainCell.m; sourceTree = "<group>"; };
+		3AB48B8F21354838007F268F /* myMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myMainCell.xib; sourceTree = "<group>"; };
+		3AB48B9221354C90007F268F /* myMainCelllListBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myMainCelllListBtn.h; sourceTree = "<group>"; };
+		3AB48B9321354C90007F268F /* myMainCelllListBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myMainCelllListBtn.m; sourceTree = "<group>"; };
+		3AB48B9521354C9E007F268F /* myMainCelllListBtn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myMainCelllListBtn.xib; sourceTree = "<group>"; };
+		3AB48B9D213563DF007F268F /* myMainView+addView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "myMainView+addView.h"; sourceTree = "<group>"; };
+		3AB48B9E213563DF007F268F /* myMainView+addView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "myMainView+addView.m"; sourceTree = "<group>"; };
 		3AD7ACC820E5BD55000FDBA5 /* CardManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD7ACCB20E5BD55000FDBA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AD7ACCC20E5BD55000FDBA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,19 +181,23 @@
 		3AD7AD1F20E5C517000FDBA5 /* UITextField+HYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HYAdd.m"; sourceTree = "<group>"; };
 		3AD7AD2520E5C9C9000FDBA5 /* LocalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalData.h; sourceTree = "<group>"; };
 		3AD7AD2620E5C9C9000FDBA5 /* LocalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalData.m; sourceTree = "<group>"; };
-		3AD7AD2C20E5D84C000FDBA5 /* firstHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = firstHomeViewController.h; sourceTree = "<group>"; };
-		3AD7AD2D20E5D84C000FDBA5 /* firstHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = firstHomeViewController.m; sourceTree = "<group>"; };
-		3AD7AD2E20E5D84C000FDBA5 /* firstHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firstHomeViewController.xib; sourceTree = "<group>"; };
-		3AD7AD3120E5D85F000FDBA5 /* fourHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fourHomeViewController.h; sourceTree = "<group>"; };
-		3AD7AD3220E5D85F000FDBA5 /* fourHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fourHomeViewController.m; sourceTree = "<group>"; };
-		3AD7AD3320E5D85F000FDBA5 /* fourHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fourHomeViewController.xib; sourceTree = "<group>"; };
-		3AD7AD3620E5D870000FDBA5 /* secondHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secondHomeViewController.h; sourceTree = "<group>"; };
-		3AD7AD3720E5D870000FDBA5 /* secondHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = secondHomeViewController.m; sourceTree = "<group>"; };
-		3AD7AD3820E5D870000FDBA5 /* secondHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = secondHomeViewController.xib; sourceTree = "<group>"; };
-		3AD7AD3B20E5D885000FDBA5 /* thridHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thridHomeViewController.h; sourceTree = "<group>"; };
-		3AD7AD3C20E5D885000FDBA5 /* thridHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thridHomeViewController.m; sourceTree = "<group>"; };
-		3AD7AD3D20E5D885000FDBA5 /* thridHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = thridHomeViewController.xib; sourceTree = "<group>"; };
 		3AD7AD4020E5DA5D000FDBA5 /* ChangeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChangeData.json; sourceTree = "<group>"; };
+		3AF59E6A21350450005D4280 /* baseLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baseLogicManager.h; sourceTree = "<group>"; };
+		3AF59E6B21350450005D4280 /* baseLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baseLogicManager.m; sourceTree = "<group>"; };
+		3AF59E6E21350EF0005D4280 /* homeMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeMainView.m; sourceTree = "<group>"; };
+		3AF59E6F21350EF0005D4280 /* homeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeMainView.h; sourceTree = "<group>"; };
+		3AF59E7121350EF1005D4280 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeViewController.m; sourceTree = "<group>"; };
+		3AF59E7221350EF1005D4280 /* homeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = homeViewController.xib; sourceTree = "<group>"; };
+		3AF59E7621350EF1005D4280 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeViewController.h; sourceTree = "<group>"; };
+		3AF59E7C21350EF1005D4280 /* homeLogicManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeLogicManager.m; sourceTree = "<group>"; };
+		3AF59E7D21350EF1005D4280 /* homeLogicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeLogicManager.h; sourceTree = "<group>"; };
+		3AF59E8621350F26005D4280 /* homeImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeImport.h; sourceTree = "<group>"; };
+		3AF59E872135115B005D4280 /* homeMainViewFirstCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeMainViewFirstCell.h; sourceTree = "<group>"; };
+		3AF59E882135115B005D4280 /* homeMainViewFirstCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homeMainViewFirstCell.m; sourceTree = "<group>"; };
+		3AF59E892135115B005D4280 /* homeMainViewFirstCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeMainViewFirstCell.xib; sourceTree = "<group>"; };
+		3AF59E8C2135117B005D4280 /* homeMainViewSecondCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = homeMainViewSecondCell.h; sourceTree = "<group>"; };
+		3AF59E8D2135117B005D4280 /* homeMainViewSecondCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homeMainViewSecondCell.m; sourceTree = "<group>"; };
+		3AF59E8E2135117B005D4280 /* homeMainViewSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeMainViewSecondCell.xib; sourceTree = "<group>"; };
 		3AFAEC8520EF01C900B58E32 /* updownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = updownView.h; sourceTree = "<group>"; };
 		3AFAEC8620EF01C900B58E32 /* updownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = updownView.m; sourceTree = "<group>"; };
 		43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,26 +206,6 @@
 		AEFAE602D8919708605F369B /* libPods-CardManageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3570EE3700E5965F142D372 /* Pods-CardManageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageTests/Pods-CardManageTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFC08A2A1E8DBF40ED7CD363 /* Pods-CardManageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageTests/Pods-CardManageTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E703C13420F33CFB0043E206 /* MainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
-		E703C13520F33CFB0043E206 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
-		E703C13620F33CFB0043E206 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
-		E703C13920F34F210043E206 /* HorseRaceLampView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorseRaceLampView.h; sourceTree = "<group>"; };
-		E703C13A20F34F210043E206 /* HorseRaceLampView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampView.m; sourceTree = "<group>"; };
-		E73AEA6C20F0D31E0034E825 /* CreditcardEvaluatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditcardEvaluatCell.h; sourceTree = "<group>"; };
-		E73AEA6D20F0D31E0034E825 /* CreditcardEvaluatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditcardEvaluatCell.m; sourceTree = "<group>"; };
-		E73AEA6E20F0D31E0034E825 /* CreditcardEvaluatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditcardEvaluatCell.xib; sourceTree = "<group>"; };
-		E791BB8320F44F1E0007915A /* MessageCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCenterViewController.h; sourceTree = "<group>"; };
-		E791BB8420F44F1E0007915A /* MessageCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCenterViewController.m; sourceTree = "<group>"; };
-		E791BB8520F44F1E0007915A /* MessageCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCenterViewController.xib; sourceTree = "<group>"; };
-		E791BB8820F4924B0007915A /* MessageDetialsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageDetialsCell.h; sourceTree = "<group>"; };
-		E791BB8920F4924B0007915A /* MessageDetialsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageDetialsCell.m; sourceTree = "<group>"; };
-		E791BB8A20F4924B0007915A /* MessageDetialsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageDetialsCell.xib; sourceTree = "<group>"; };
-		E791BB8E20F492DF0007915A /* MessageDetialsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageDetialsModel.h; sourceTree = "<group>"; };
-		E791BB8F20F492DF0007915A /* MessageDetialsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageDetialsModel.m; sourceTree = "<group>"; };
-		E799406420EB1BC500D3F2FE /* HeadMainBtnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadMainBtnView.h; sourceTree = "<group>"; };
-		E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadMainBtnView.m; sourceTree = "<group>"; };
-		E799406B20EB1D4100D3F2FE /* CustomMainbBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomMainbBtn.h; sourceTree = "<group>"; };
-		E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomMainbBtn.m; sourceTree = "<group>"; };
 		F4FFE5A02BB352DD63C6AB4D /* Pods-CardManageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageUITests/Pods-CardManageUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +247,78 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A41AF882136604300C8F5EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A41AF9D2136778900C8F5EE /* loginMainView.h */,
+				3A41AF9E2136778900C8F5EE /* loginMainView.m */,
+				3A41AFA32136788C00C8F5EE /* loginMainView.xib */,
+				3A41AFAD2136987E00C8F5EE /* newsLoginView.h */,
+				3A41AFAE2136987E00C8F5EE /* newsLoginView.m */,
+				3A41AFB3213698D200C8F5EE /* newsLoginView.xib */,
+				3A41AFB02136989700C8F5EE /* passwordLoginView.h */,
+				3A41AFB12136989700C8F5EE /* passwordLoginView.m */,
+				3A41AFB5213698DD00C8F5EE /* passwordLoginView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A41AF892136604300C8F5EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A41AFA82136801300C8F5EE /* loginMainViewController.h */,
+				3A41AFA92136801300C8F5EE /* loginMainViewController.m */,
+				3A41AFAA2136801300C8F5EE /* loginMainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A41AF8D2136604300C8F5EE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3A41AFA0213677F300C8F5EE /* loginLogicManager.h */,
+				3A41AFA1213677F300C8F5EE /* loginLogicManager.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3A41AF902136611900C8F5EE /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				3A41AFBA2136DB7D00C8F5EE /* import */,
+				3A41AF912136617000C8F5EE /* appRoute.h */,
+				3A41AF922136617000C8F5EE /* appRoute.m */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		3A41AF94213664A000C8F5EE /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				3A41AF95213664B700C8F5EE /* AppFMDB.h */,
+				3A41AF96213664B700C8F5EE /* AppFMDB.m */,
+				3A41AF982136661200C8F5EE /* AppDatabase.h */,
+				3A41AF992136661200C8F5EE /* AppDatabase.m */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		3A41AF9B2136768100C8F5EE /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3A41AF9C213676D000C8F5EE /* loginImport.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
+		3A41AFBA2136DB7D00C8F5EE /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3A41AFBB2136DB9800C8F5EE /* RouteImport.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
 		3A49A11820EE0EE50023C830 /* commonView */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +326,8 @@
 				3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */,
 				3AFAEC8520EF01C900B58E32 /* updownView.h */,
 				3AFAEC8620EF01C900B58E32 /* updownView.m */,
+				3A41AFB72136B3D500C8F5EE /* likeLoginTextField.h */,
+				3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -229,21 +335,59 @@
 		3A57B6AE20EB286600E54255 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				3A49A10D20EE02390023C830 /* loginMainViewController.h */,
-				3A49A10E20EE02390023C830 /* loginMainViewController.m */,
-				3A49A10F20EE02390023C830 /* loginMainViewController.xib */,
+				3A41AF9B2136768100C8F5EE /* import */,
+				3A41AF892136604300C8F5EE /* Controller */,
+				3A41AF8D2136604300C8F5EE /* Logic */,
+				3A41AF882136604300C8F5EE /* View */,
 			);
 			path = login;
 			sourceTree = "<group>";
 		};
-		3ACA419020F77E8C004AF587 /* Html */ = {
+		3AB48B78213543E8007F268F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3ACA41A520F784D2004AF587 /* css */,
-				3ACA41A620F784D2004AF587 /* index.html */,
-				3ACA41A720F784D3004AF587 /* js */,
+				3AB48B7B213543E8007F268F /* myViewController.h */,
+				3AB48B7D213543E8007F268F /* myViewController.m */,
+				3AB48B79213543E8007F268F /* myViewController.xib */,
+				3AB48B7A213543E8007F268F /* secondHomeViewController.h */,
+				3AB48B7E213543E8007F268F /* secondHomeViewController.m */,
+				3AB48B7C213543E8007F268F /* secondHomeViewController.xib */,
 			);
-			path = Html;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AB48B7F213543E8007F268F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3AB48B872135455C007F268F /* myLogicManager.h */,
+				3AB48B882135455C007F268F /* myLogicManager.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3AB48B80213543E8007F268F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AB48B8A213545B3007F268F /* myMainView.h */,
+				3AB48B8B213545B3007F268F /* myMainView.m */,
+				3AB48B8D21354838007F268F /* myMainCell.h */,
+				3AB48B8E21354838007F268F /* myMainCell.m */,
+				3AB48B8F21354838007F268F /* myMainCell.xib */,
+				3AB48B9221354C90007F268F /* myMainCelllListBtn.h */,
+				3AB48B9321354C90007F268F /* myMainCelllListBtn.m */,
+				3AB48B9521354C9E007F268F /* myMainCelllListBtn.xib */,
+				3AB48B9D213563DF007F268F /* myMainView+addView.h */,
+				3AB48B9E213563DF007F268F /* myMainView+addView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AB48B81213543E8007F268F /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3AB48B86213544B9007F268F /* myImport.h */,
+			);
+			path = import;
 			sourceTree = "<group>";
 		};
 		3AD7ACBF20E5BD55000FDBA5 = {
@@ -327,8 +471,6 @@
 		3AD7AD0520E5C42A000FDBA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E791BB8D20F4925F0007915A /* Model */,
-				E799406320EB1B6E00D3F2FE /* View */,
 				3AD7AD0620E5C42A000FDBA5 /* Business */,
 				3AD7AD0720E5C42A000FDBA5 /* Main */,
 			);
@@ -338,11 +480,10 @@
 		3AD7AD0620E5C42A000FDBA5 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				3A41AF902136611900C8F5EE /* Route */,
 				3A57B6AE20EB286600E54255 /* login */,
 				3AD7AD2A20E5D814000FDBA5 /* firstHome */,
-				3AD7AD2820E5D814000FDBA5 /* fourHome */,
 				3AD7AD2920E5D814000FDBA5 /* secondHome */,
-				3AD7AD2B20E5D814000FDBA5 /* thridHome */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -361,6 +502,8 @@
 				3AD7AD0F20E5C483000FDBA5 /* MainTabBarViewController.m */,
 				3A57B6A820EB16D600E54255 /* appAppearInfo.h */,
 				3A57B6A920EB16D600E54255 /* appAppearInfo.m */,
+				3AF59E6A21350450005D4280 /* baseLogicManager.h */,
+				3AF59E6B21350450005D4280 /* baseLogicManager.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -368,6 +511,7 @@
 		3AD7AD1320E5C517000FDBA5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3A41AF94213664A000C8F5EE /* Database */,
 				3A49A11820EE0EE50023C830 /* commonView */,
 				3AD7AD1420E5C517000FDBA5 /* Tools */,
 				3AD7AD1520E5C517000FDBA5 /* Category */,
@@ -403,22 +547,13 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		3AD7AD2820E5D814000FDBA5 /* fourHome */ = {
-			isa = PBXGroup;
-			children = (
-				3AD7AD3120E5D85F000FDBA5 /* fourHomeViewController.h */,
-				3AD7AD3220E5D85F000FDBA5 /* fourHomeViewController.m */,
-				3AD7AD3320E5D85F000FDBA5 /* fourHomeViewController.xib */,
-			);
-			path = fourHome;
-			sourceTree = "<group>";
-		};
 		3AD7AD2920E5D814000FDBA5 /* secondHome */ = {
 			isa = PBXGroup;
 			children = (
-				3AD7AD3620E5D870000FDBA5 /* secondHomeViewController.h */,
-				3AD7AD3720E5D870000FDBA5 /* secondHomeViewController.m */,
-				3AD7AD3820E5D870000FDBA5 /* secondHomeViewController.xib */,
+				3AB48B78213543E8007F268F /* Controller */,
+				3AB48B81213543E8007F268F /* import */,
+				3AB48B7F213543E8007F268F /* Logic */,
+				3AB48B80213543E8007F268F /* View */,
 			);
 			path = secondHome;
 			sourceTree = "<group>";
@@ -426,25 +561,56 @@
 		3AD7AD2A20E5D814000FDBA5 /* firstHome */ = {
 			isa = PBXGroup;
 			children = (
-				3AD7AD2C20E5D84C000FDBA5 /* firstHomeViewController.h */,
-				3AD7AD2D20E5D84C000FDBA5 /* firstHomeViewController.m */,
-				3AD7AD2E20E5D84C000FDBA5 /* firstHomeViewController.xib */,
-				E791BB8320F44F1E0007915A /* MessageCenterViewController.h */,
-				E791BB8420F44F1E0007915A /* MessageCenterViewController.m */,
-				E791BB8520F44F1E0007915A /* MessageCenterViewController.xib */,
+				3AF59E7021350EF1005D4280 /* Controller */,
+				3AF59E7A21350EF1005D4280 /* import */,
+				3AF59E7B21350EF1005D4280 /* Logic */,
+				3AF59E6D21350EF0005D4280 /* View */,
 			);
 			path = firstHome;
 			sourceTree = "<group>";
 		};
-		3AD7AD2B20E5D814000FDBA5 /* thridHome */ = {
+		3AF59E6D21350EF0005D4280 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3ACA419020F77E8C004AF587 /* Html */,
-				3AD7AD3B20E5D885000FDBA5 /* thridHomeViewController.h */,
-				3AD7AD3C20E5D885000FDBA5 /* thridHomeViewController.m */,
-				3AD7AD3D20E5D885000FDBA5 /* thridHomeViewController.xib */,
+				3AF59E6F21350EF0005D4280 /* homeMainView.h */,
+				3AF59E6E21350EF0005D4280 /* homeMainView.m */,
+				3AF59E872135115B005D4280 /* homeMainViewFirstCell.h */,
+				3AF59E882135115B005D4280 /* homeMainViewFirstCell.m */,
+				3AF59E892135115B005D4280 /* homeMainViewFirstCell.xib */,
+				3AF59E8C2135117B005D4280 /* homeMainViewSecondCell.h */,
+				3AF59E8D2135117B005D4280 /* homeMainViewSecondCell.m */,
+				3AF59E8E2135117B005D4280 /* homeMainViewSecondCell.xib */,
+				3AB48B722135312C007F268F /* homeMainView+addView.h */,
+				3AB48B732135312C007F268F /* homeMainView+addView.m */,
 			);
-			path = thridHome;
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AF59E7021350EF1005D4280 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3AF59E7621350EF1005D4280 /* homeViewController.h */,
+				3AF59E7121350EF1005D4280 /* homeViewController.m */,
+				3AF59E7221350EF1005D4280 /* homeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AF59E7A21350EF1005D4280 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3AF59E8621350F26005D4280 /* homeImport.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
+		3AF59E7B21350EF1005D4280 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3AF59E7D21350EF1005D4280 /* homeLogicManager.h */,
+				3AF59E7C21350EF1005D4280 /* homeLogicManager.m */,
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 		9F6A5CD2889EF53DE8F621AC /* Pods */ = {
@@ -458,37 +624,6 @@
 				F4FFE5A02BB352DD63C6AB4D /* Pods-CardManageUITests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		E791BB8D20F4925F0007915A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E791BB8E20F492DF0007915A /* MessageDetialsModel.h */,
-				E791BB8F20F492DF0007915A /* MessageDetialsModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E799406320EB1B6E00D3F2FE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E799406420EB1BC500D3F2FE /* HeadMainBtnView.h */,
-				E799406520EB1BC500D3F2FE /* HeadMainBtnView.m */,
-				E703C13920F34F210043E206 /* HorseRaceLampView.h */,
-				E703C13A20F34F210043E206 /* HorseRaceLampView.m */,
-				E799406B20EB1D4100D3F2FE /* CustomMainbBtn.h */,
-				E799406C20EB1D4100D3F2FE /* CustomMainbBtn.m */,
-				E73AEA6C20F0D31E0034E825 /* CreditcardEvaluatCell.h */,
-				E73AEA6D20F0D31E0034E825 /* CreditcardEvaluatCell.m */,
-				E73AEA6E20F0D31E0034E825 /* CreditcardEvaluatCell.xib */,
-				E703C13420F33CFB0043E206 /* MainTableViewCell.h */,
-				E703C13520F33CFB0043E206 /* MainTableViewCell.m */,
-				E703C13620F33CFB0043E206 /* MainTableViewCell.xib */,
-				E791BB8820F4924B0007915A /* MessageDetialsCell.h */,
-				E791BB8920F4924B0007915A /* MessageDetialsCell.m */,
-				E791BB8A20F4924B0007915A /* MessageDetialsCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,21 +735,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ACA41A920F784D3004AF587 /* index.html in Resources */,
-				3AD7AD3520E5D85F000FDBA5 /* fourHomeViewController.xib in Resources */,
-				3AD7AD3020E5D84C000FDBA5 /* firstHomeViewController.xib in Resources */,
+				3AB48B9121354838007F268F /* myMainCell.xib in Resources */,
+				3A41AFAC2136801300C8F5EE /* loginMainViewController.xib in Resources */,
 				3AD7ACD820E5BD55000FDBA5 /* LaunchScreen.storyboard in Resources */,
-				3AD7AD3F20E5D885000FDBA5 /* thridHomeViewController.xib in Resources */,
-				E791BB8C20F4924B0007915A /* MessageDetialsCell.xib in Resources */,
+				3AF59E8021350EF1005D4280 /* homeViewController.xib in Resources */,
+				3A41AFB6213698DD00C8F5EE /* passwordLoginView.xib in Resources */,
 				3AD7ACD520E5BD55000FDBA5 /* Assets.xcassets in Resources */,
-				E73AEA7020F0D31E0034E825 /* CreditcardEvaluatCell.xib in Resources */,
-				E703C13820F33CFB0043E206 /* MainTableViewCell.xib in Resources */,
+				3AF59E902135117B005D4280 /* homeMainViewSecondCell.xib in Resources */,
+				3AF59E8B2135115B005D4280 /* homeMainViewFirstCell.xib in Resources */,
+				3A41AFA42136788C00C8F5EE /* loginMainView.xib in Resources */,
+				3AB48B83213543E8007F268F /* secondHomeViewController.xib in Resources */,
+				3A41AFB4213698D200C8F5EE /* newsLoginView.xib in Resources */,
 				3AD7ACD320E5BD55000FDBA5 /* Main.storyboard in Resources */,
-				3AD7AD3A20E5D870000FDBA5 /* secondHomeViewController.xib in Resources */,
-				3ACA41AA20F784D3004AF587 /* js in Resources */,
-				3ACA41A820F784D3004AF587 /* css in Resources */,
-				E791BB8720F44F1E0007915A /* MessageCenterViewController.xib in Resources */,
-				3A49A11120EE02390023C830 /* loginMainViewController.xib in Resources */,
+				3AB48B9621354C9E007F268F /* myMainCelllListBtn.xib in Resources */,
+				3AB48B82213543E8007F268F /* myViewController.xib in Resources */,
 				3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,34 +832,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD7ACD020E5BD55000FDBA5 /* ViewController.m in Sources */,
+				3AF59E8521350EF1005D4280 /* homeLogicManager.m in Sources */,
+				3A41AF9A2136661200C8F5EE /* AppDatabase.m in Sources */,
+				3AB48B84213543E8007F268F /* myViewController.m in Sources */,
 				3AD7AD2020E5C517000FDBA5 /* UIImage+HYAdd.m in Sources */,
+				3AF59E8A2135115B005D4280 /* homeMainViewFirstCell.m in Sources */,
 				3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */,
-				3AD7AD2F20E5D84C000FDBA5 /* firstHomeViewController.m in Sources */,
+				3AB48B892135455C007F268F /* myLogicManager.m in Sources */,
+				3A41AFB92136B3D500C8F5EE /* likeLoginTextField.m in Sources */,
+				3AB48B742135312C007F268F /* homeMainView+addView.m in Sources */,
 				3AD7ACDB20E5BD55000FDBA5 /* main.m in Sources */,
-				E791BB8B20F4924B0007915A /* MessageDetialsCell.m in Sources */,
+				3A41AFA2213677F300C8F5EE /* loginLogicManager.m in Sources */,
 				3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */,
-				E703C13720F33CFB0043E206 /* MainTableViewCell.m in Sources */,
+				3A41AF97213664B700C8F5EE /* AppFMDB.m in Sources */,
+				3A41AF9F2136778900C8F5EE /* loginMainView.m in Sources */,
+				3A41AF932136617000C8F5EE /* appRoute.m in Sources */,
+				3AB48B9F213563DF007F268F /* myMainView+addView.m in Sources */,
+				3AF59E7E21350EF1005D4280 /* homeMainView.m in Sources */,
+				3AB48B9421354C90007F268F /* myMainCelllListBtn.m in Sources */,
 				3AD7AD0320E5C397000FDBA5 /* HYNetworkCache.m in Sources */,
 				3AD7AD2220E5C517000FDBA5 /* NSTimer+addition.m in Sources */,
-				E791BB8620F44F1E0007915A /* MessageCenterViewController.m in Sources */,
-				E799406620EB1BC500D3F2FE /* HeadMainBtnView.m in Sources */,
 				3AD7AD1020E5C484000FDBA5 /* AppBaseViewController.m in Sources */,
-				3AD7AD3420E5D85F000FDBA5 /* fourHomeViewController.m in Sources */,
-				E791BB9020F492DF0007915A /* MessageDetialsModel.m in Sources */,
-				E73AEA6F20F0D31E0034E825 /* CreditcardEvaluatCell.m in Sources */,
 				3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */,
+				3AB48B8C213545B3007F268F /* myMainView.m in Sources */,
 				3AD7AD1120E5C484000FDBA5 /* MainNavigationController.m in Sources */,
-				3AD7AD3E20E5D885000FDBA5 /* thridHomeViewController.m in Sources */,
-				E703C13B20F34F210043E206 /* HorseRaceLampView.m in Sources */,
-				3AD7AD3920E5D870000FDBA5 /* secondHomeViewController.m in Sources */,
+				3AB48B9021354838007F268F /* myMainCell.m in Sources */,
+				3A41AFAF2136987E00C8F5EE /* newsLoginView.m in Sources */,
+				3AB48B85213543E8007F268F /* secondHomeViewController.m in Sources */,
 				3AD7AD2720E5C9C9000FDBA5 /* LocalData.m in Sources */,
 				3AD7AD2120E5C517000FDBA5 /* UIButton+HYAdd.m in Sources */,
-				3A49A11020EE02390023C830 /* loginMainViewController.m in Sources */,
+				3AF59E8F2135117B005D4280 /* homeMainViewSecondCell.m in Sources */,
+				3A41AFAB2136801300C8F5EE /* loginMainViewController.m in Sources */,
 				3AD7AD1220E5C484000FDBA5 /* MainTabBarViewController.m in Sources */,
 				3AD7AD2420E5C517000FDBA5 /* UITextField+HYAdd.m in Sources */,
+				3AF59E7F21350EF1005D4280 /* homeViewController.m in Sources */,
+				3AF59E6C21350450005D4280 /* baseLogicManager.m in Sources */,
 				3AD7AD0420E5C397000FDBA5 /* HYNetworkHelper.m in Sources */,
-				E799406D20EB1D4100D3F2FE /* CustomMainbBtn.m in Sources */,
 				3AD7ACCD20E5BD55000FDBA5 /* AppDelegate.m in Sources */,
+				3A41AFB22136989700C8F5EE /* passwordLoginView.m in Sources */,
 				3AFAEC8720EF01C900B58E32 /* updownView.m in Sources */,
 				3AD7AD2320E5C517000FDBA5 /* UIView+HYAdd.m in Sources */,
 			);
@@ -892,13 +1036,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WNX4QXFZ58;
+				DEVELOPMENT_TEAM = Y6NW57B6JE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CardManage/Classes/Main/AppHeadPch.pch";
 				INFOPLIST_FILE = CardManage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CybeWiser.CardManage;
+				PRODUCT_BUNDLE_IDENTIFIER = CybeWiser.CardManagedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -909,13 +1056,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WNX4QXFZ58;
+				DEVELOPMENT_TEAM = Y6NW57B6JE;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CardManage/Classes/Main/AppHeadPch.pch";
 				INFOPLIST_FILE = CardManage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CybeWiser.CardManage;
+				PRODUCT_BUNDLE_IDENTIFIER = CybeWiser.CardManagedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

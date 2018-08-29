@@ -13,6 +13,6 @@
 /**
  *  取本地的json数据
  */
-+ (nullable id)getLocalJsonDataWithName:(NSString *)jsonName;
++ (nullable id)getLocalJsonDataWithName:(NSString *_Nullable)jsonName;
 
 @end
