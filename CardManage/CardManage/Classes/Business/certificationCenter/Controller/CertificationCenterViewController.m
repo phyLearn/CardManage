@@ -18,6 +18,17 @@
     [super viewDidLoad];
     
     [[CertificationLogicManager shared] startLogicManagerWithViewController:self];
+    [[CertificationLogicManager shared] registerObserWithDele:self];
+}
+
+- (void)certificationRowAction:(NSNotification *)noti{
+    NSDictionary *userInfo = noti.object;
+    //开始跳转
+    [[appRoute shared] routeToCertificationCenterWithTag:[userInfo[@"cerTag"] integerValue] belogVC:self];
+}
+
+- (void)dealloc{
+    [[CertificationLogicManager shared] removeAllObserWithDele:self];
 }
 
 @end

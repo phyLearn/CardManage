@@ -10,6 +10,7 @@
 #define certificationImport_h
 
 #import "CertificationLogicManager.h"
-#import "CertificationInputParamsModel.h"
+#import "CertificationMainView.h"
+#import "CertificationListData.h"
 
 #endif /* certificationImport_h */

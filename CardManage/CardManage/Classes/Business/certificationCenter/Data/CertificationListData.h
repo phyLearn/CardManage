@@ -1,5 +1,5 @@
 //
-//  CertificationInputParamsModel.h
+//  CertificationListData.h
 //  CardManage
 //
 //  Created by Penghuaiyu on 2018/8/30.
@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CertificationInputParamsModel : NSObject
+@interface CertificationListData : NSObject
+
+//获取列表数据
++ (NSArray *)getCertificationListArr;
 
 @end

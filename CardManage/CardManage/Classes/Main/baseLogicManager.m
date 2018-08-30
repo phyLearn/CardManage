@@ -10,5 +10,8 @@
 
 @implementation baseLogicManager
 
+- (void)removeAllObserWithDele:(id)delegate{
+    [[NSNotificationCenter defaultCenter] removeObserver:delegate];
+}
 
 @end

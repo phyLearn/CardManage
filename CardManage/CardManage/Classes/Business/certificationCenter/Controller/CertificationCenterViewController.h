@@ -12,6 +12,6 @@
 @interface CertificationCenterViewController : AppBaseViewController
 
 //对传入的参数统一管理
-@property (nonatomic, strong) CertificationInputParamsModel *inputParamsModel;
+@property (nonatomic, strong) NSDictionary *inputParamsDict;
 
 @end

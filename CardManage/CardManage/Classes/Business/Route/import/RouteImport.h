@@ -17,6 +17,5 @@
 
 #pragma mark --- 认证中心管理 ---
 #import "CertificationCenterViewController.h"
-#import "CertificationInputParamsModel.h"
 
 #endif /* RouteImport_h */

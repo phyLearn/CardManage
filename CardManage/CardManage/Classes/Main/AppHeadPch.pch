@@ -36,6 +36,11 @@
 #define kNavigationBarHeight 64.0
 #endif
 
+//定义是否为iPhoneX
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//适配X的宏
+#define NAVHEIGHT (iPhoneX?88:64)
+
 
 #pragma mark - Frame相关
 // 屏幕宽/高

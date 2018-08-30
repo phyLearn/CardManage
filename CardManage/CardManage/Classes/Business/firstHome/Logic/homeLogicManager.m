@@ -38,8 +38,4 @@
 #pragma clang diagnostic pop
 }
 
-- (void)removeAllObserWithDele:(id)delegate{
-    [[NSNotificationCenter defaultCenter] removeObserver:delegate];
-}
-
 @end

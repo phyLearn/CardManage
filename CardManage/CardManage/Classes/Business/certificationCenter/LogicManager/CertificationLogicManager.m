@@ -7,6 +7,7 @@
 //
 
 #import "CertificationLogicManager.h"
+#import "certificationImport.h"
 
 @implementation CertificationLogicManager
 
@@ -23,6 +24,17 @@
 - (void)startLogicManagerWithViewController:(UIViewController *)vc{
     self.belongVC = vc;
     vc.title = @"认证中心";
+    NSDictionary *inputParamsDict = @{@"listArr":[CertificationListData getCertificationListArr]};
+    CertificationMainView *certificationView = [[CertificationMainView alloc] initWithFrame:CGRectMake(0, NAVHEIGHT, AppScreenWidth, AppScreenHeight) data:inputParamsDict];
+    [vc.view addSubview:certificationView];
+}
+
+//注册通知
+- (void)registerObserWithDele:(id)delegate{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    [[NSNotificationCenter defaultCenter] addObserver:delegate selector:@selector(certificationRowAction:) name:@"REGISTERCERROWBTN" object:nil];
+#pragma clang diagnostic pop
 }
 
 @end

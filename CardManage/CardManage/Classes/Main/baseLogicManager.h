@@ -18,4 +18,10 @@
 
 //开始方法
 - (void)startLogicManagerWithViewController:(UIViewController *)vc;
+
+//注册通知
+- (void)registerObserWithDele:(id)delegate;
+
+//删除通知
+- (void)removeAllObserWithDele:(id)delegate;
 @end
