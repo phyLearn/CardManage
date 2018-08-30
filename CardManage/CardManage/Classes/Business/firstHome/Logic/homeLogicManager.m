@@ -30,4 +30,16 @@
     [vc.view addSubview:mainView];
 }
 
+//注册通知
+- (void)registerObserWithDele:(id)delegate{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    [[NSNotificationCenter defaultCenter] addObserver:delegate selector:@selector(estimateBtnAction) name:@"REGISTERESTIMATEBTN" object:nil];
+#pragma clang diagnostic pop
+}
+
+- (void)removeAllObserWithDele:(id)delegate{
+    [[NSNotificationCenter defaultCenter] removeObserver:delegate];
+}
+
 @end

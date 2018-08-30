@@ -14,17 +14,33 @@
 
 @implementation homeViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     //需要隐藏导航栏
     self.navigationController.delegate = (id)self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     //登录成功才能继续往下走
     [[homeLogicManager shared] startLogicManagerWithViewController:self];
+    [[homeLogicManager shared] registerObserWithDele:self];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     //需要判断登录状态
     [[appRoute shared] loginAbountWithVC:self Complete:nil];
+}
+
+- (void)dealloc{
+    [[homeLogicManager shared] removeAllObserWithDele:self];
+}
+
+#pragma mark -- 需要跳转 ---
+//评估按钮点击
+- (void)estimateBtnAction{
+    HYLog(@"评估按钮点击");
+    [[appRoute shared] routeToCertificationCenterWithParam:@{} belongVC:self];
 }
 @end

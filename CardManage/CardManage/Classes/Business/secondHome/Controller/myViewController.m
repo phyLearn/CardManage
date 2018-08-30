@@ -15,10 +15,14 @@
 
 @implementation myViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     //需要隐藏导航栏
     self.navigationController.delegate = (id)self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     [[myLogicManager shared] startLogicManagerWithViewController:self];
 }
 

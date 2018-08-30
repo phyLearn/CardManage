@@ -4,8 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,20 +32,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvG-xV-cZM">
-                                <rect key="frame" x="61" y="170" width="159" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvG-xV-cZM" customClass="likeLoginBtn">
+                                <rect key="frame" x="20" y="169" width="240" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="3Va-lH-N6U"/>
-                                    <constraint firstAttribute="height" constant="30" id="5H4-Ia-yq2"/>
+                                    <constraint firstAttribute="width" secondItem="YvG-xV-cZM" secondAttribute="height" multiplier="40:6" id="CiE-2n-pdx"/>
                                 </constraints>
                                 <state key="normal" title="马上评估，立即拿钱"/>
+                                <connections>
+                                    <action selector="estimateBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mGJ-Xh-Tl6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Uq-Cz-yW4" firstAttribute="centerX" secondItem="ixy-sN-dgs" secondAttribute="centerX" id="4X6-0F-YZ8"/>
                             <constraint firstItem="YvG-xV-cZM" firstAttribute="centerX" secondItem="ixy-sN-dgs" secondAttribute="centerX" id="GDc-Bo-1Eb"/>
-                            <constraint firstAttribute="bottom" secondItem="YvG-xV-cZM" secondAttribute="bottom" constant="20" id="hJn-LL-3al"/>
+                            <constraint firstAttribute="trailing" secondItem="YvG-xV-cZM" secondAttribute="trailing" constant="20" id="Jeo-Tv-9Bo"/>
+                            <constraint firstItem="YvG-xV-cZM" firstAttribute="leading" secondItem="ixy-sN-dgs" secondAttribute="leading" constant="20" id="P61-gu-Rpb"/>
+                            <constraint firstAttribute="bottom" secondItem="YvG-xV-cZM" secondAttribute="bottom" constant="15" id="hJn-LL-3al"/>
                             <constraint firstItem="7Uq-Cz-yW4" firstAttribute="top" secondItem="ixy-sN-dgs" secondAttribute="top" constant="20" id="v9g-Hb-bYd"/>
                         </constraints>
                     </view>

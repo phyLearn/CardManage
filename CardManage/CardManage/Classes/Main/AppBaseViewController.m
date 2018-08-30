@@ -24,8 +24,8 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    //将状态栏改为白色
-    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+    //将状态栏改为黑色，改为白色改下枚举就行
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleDefault];
 }
 
 - (void)autoKeyBoard
@@ -33,9 +33,9 @@
     [self obtainAllTextField:self.view];
 }
 
-//将状态栏改为白色
+//将状态栏改为黑色，改为白色改下枚举就行
 - (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 
 #pragma mark - 键盘相关

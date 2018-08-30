@@ -22,6 +22,11 @@
 		3A41AFB6213698DD00C8F5EE /* passwordLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41AFB5213698DD00C8F5EE /* passwordLoginView.xib */; };
 		3A41AFB92136B3D500C8F5EE /* likeLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */; };
 		3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */; };
+		3A4EF69021378216005CE3E3 /* CertificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF68E21378216005CE3E3 /* CertificationCenterViewController.m */; };
+		3A4EF69121378216005CE3E3 /* CertificationCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EF68F21378216005CE3E3 /* CertificationCenterViewController.xib */; };
+		3A4EF6952137829F005CE3E3 /* CertificationLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6942137829F005CE3E3 /* CertificationLogicManager.m */; };
+		3A4EF69C21378C2F005CE3E3 /* CertificationInputParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF69B21378C2F005CE3E3 /* CertificationInputParamsModel.m */; };
+		3A4EF6A2213791F0005CE3E3 /* appRoute+CertificationRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6A1213791F0005CE3E3 /* appRoute+CertificationRoute.m */; };
 		3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6A920EB16D600E54255 /* appAppearInfo.m */; };
 		3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */; };
 		3AB48B742135312C007F268F /* homeMainView+addView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B732135312C007F268F /* homeMainView+addView.m */; };
@@ -116,6 +121,16 @@
 		3A41AFBB2136DB9800C8F5EE /* RouteImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteImport.h; sourceTree = "<group>"; };
 		3A49A11920EE0EFF0023C830 /* likeLoginBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = likeLoginBtn.h; sourceTree = "<group>"; };
 		3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = likeLoginBtn.m; sourceTree = "<group>"; };
+		3A4EF68D21378216005CE3E3 /* CertificationCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificationCenterViewController.h; sourceTree = "<group>"; };
+		3A4EF68E21378216005CE3E3 /* CertificationCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificationCenterViewController.m; sourceTree = "<group>"; };
+		3A4EF68F21378216005CE3E3 /* CertificationCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificationCenterViewController.xib; sourceTree = "<group>"; };
+		3A4EF69221378270005CE3E3 /* certificationImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = certificationImport.h; sourceTree = "<group>"; };
+		3A4EF6932137829F005CE3E3 /* CertificationLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificationLogicManager.h; sourceTree = "<group>"; };
+		3A4EF6942137829F005CE3E3 /* CertificationLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificationLogicManager.m; sourceTree = "<group>"; };
+		3A4EF69A21378C2F005CE3E3 /* CertificationInputParamsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificationInputParamsModel.h; sourceTree = "<group>"; };
+		3A4EF69B21378C2F005CE3E3 /* CertificationInputParamsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificationInputParamsModel.m; sourceTree = "<group>"; };
+		3A4EF6A0213791F0005CE3E3 /* appRoute+CertificationRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appRoute+CertificationRoute.h"; sourceTree = "<group>"; };
+		3A4EF6A1213791F0005CE3E3 /* appRoute+CertificationRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "appRoute+CertificationRoute.m"; sourceTree = "<group>"; };
 		3A57B6A820EB16D600E54255 /* appAppearInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = appAppearInfo.h; sourceTree = "<group>"; };
 		3A57B6A920EB16D600E54255 /* appAppearInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appAppearInfo.m; sourceTree = "<group>"; };
 		3A57B6AB20EB1B8900E54255 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
@@ -288,6 +303,8 @@
 				3A41AFBA2136DB7D00C8F5EE /* import */,
 				3A41AF912136617000C8F5EE /* appRoute.h */,
 				3A41AF922136617000C8F5EE /* appRoute.m */,
+				3A4EF6A0213791F0005CE3E3 /* appRoute+CertificationRoute.h */,
+				3A4EF6A1213791F0005CE3E3 /* appRoute+CertificationRoute.m */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -330,6 +347,61 @@
 				3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */,
 			);
 			path = commonView;
+			sourceTree = "<group>";
+		};
+		3A4EF6882137814C005CE3E3 /* certificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF69921378C0E005CE3E3 /* Model */,
+				3A4EF68A2137817C005CE3E3 /* Controller */,
+				3A4EF68C2137817D005CE3E3 /* import */,
+				3A4EF68B2137817D005CE3E3 /* LogicManager */,
+				3A4EF6892137817C005CE3E3 /* View */,
+			);
+			path = certificationCenter;
+			sourceTree = "<group>";
+		};
+		3A4EF6892137817C005CE3E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A4EF68A2137817C005CE3E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF68D21378216005CE3E3 /* CertificationCenterViewController.h */,
+				3A4EF68E21378216005CE3E3 /* CertificationCenterViewController.m */,
+				3A4EF68F21378216005CE3E3 /* CertificationCenterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A4EF68B2137817D005CE3E3 /* LogicManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF6932137829F005CE3E3 /* CertificationLogicManager.h */,
+				3A4EF6942137829F005CE3E3 /* CertificationLogicManager.m */,
+			);
+			path = LogicManager;
+			sourceTree = "<group>";
+		};
+		3A4EF68C2137817D005CE3E3 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF69221378270005CE3E3 /* certificationImport.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
+		3A4EF69921378C0E005CE3E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF69A21378C2F005CE3E3 /* CertificationInputParamsModel.h */,
+				3A4EF69B21378C2F005CE3E3 /* CertificationInputParamsModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3A57B6AE20EB286600E54255 /* login */ = {
@@ -480,6 +552,7 @@
 		3AD7AD0620E5C42A000FDBA5 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				3A4EF6882137814C005CE3E3 /* certificationCenter */,
 				3A41AF902136611900C8F5EE /* Route */,
 				3A57B6AE20EB286600E54255 /* login */,
 				3AD7AD2A20E5D814000FDBA5 /* firstHome */,
@@ -745,6 +818,7 @@
 				3AF59E8B2135115B005D4280 /* homeMainViewFirstCell.xib in Resources */,
 				3A41AFA42136788C00C8F5EE /* loginMainView.xib in Resources */,
 				3AB48B83213543E8007F268F /* secondHomeViewController.xib in Resources */,
+				3A4EF69121378216005CE3E3 /* CertificationCenterViewController.xib in Resources */,
 				3A41AFB4213698D200C8F5EE /* newsLoginView.xib in Resources */,
 				3AD7ACD320E5BD55000FDBA5 /* Main.storyboard in Resources */,
 				3AB48B9621354C9E007F268F /* myMainCelllListBtn.xib in Resources */,
@@ -842,6 +916,7 @@
 				3A41AFB92136B3D500C8F5EE /* likeLoginTextField.m in Sources */,
 				3AB48B742135312C007F268F /* homeMainView+addView.m in Sources */,
 				3AD7ACDB20E5BD55000FDBA5 /* main.m in Sources */,
+				3A4EF6A2213791F0005CE3E3 /* appRoute+CertificationRoute.m in Sources */,
 				3A41AFA2213677F300C8F5EE /* loginLogicManager.m in Sources */,
 				3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */,
 				3A41AF97213664B700C8F5EE /* AppFMDB.m in Sources */,
@@ -855,6 +930,7 @@
 				3AD7AD1020E5C484000FDBA5 /* AppBaseViewController.m in Sources */,
 				3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */,
 				3AB48B8C213545B3007F268F /* myMainView.m in Sources */,
+				3A4EF69021378216005CE3E3 /* CertificationCenterViewController.m in Sources */,
 				3AD7AD1120E5C484000FDBA5 /* MainNavigationController.m in Sources */,
 				3AB48B9021354838007F268F /* myMainCell.m in Sources */,
 				3A41AFAF2136987E00C8F5EE /* newsLoginView.m in Sources */,
@@ -871,6 +947,8 @@
 				3AD7ACCD20E5BD55000FDBA5 /* AppDelegate.m in Sources */,
 				3A41AFB22136989700C8F5EE /* passwordLoginView.m in Sources */,
 				3AFAEC8720EF01C900B58E32 /* updownView.m in Sources */,
+				3A4EF6952137829F005CE3E3 /* CertificationLogicManager.m in Sources */,
+				3A4EF69C21378C2F005CE3E3 /* CertificationInputParamsModel.m in Sources */,
 				3AD7AD2320E5C517000FDBA5 /* UIView+HYAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

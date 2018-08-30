@@ -21,4 +21,9 @@
     self.backgroundMainView.layer.cornerRadius = 10;
 }
 
+- (IBAction)estimateBtnAction:(UIButton *)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"REGISTERESTIMATEBTN" object:nil];
+}
+
+
 @end

@@ -4,8 +4,8 @@
         "nav":
         {
             "backImg":"back_image",
-            "backColor":"#141419",
-            "titleColor":"#ffffff",
+            "backColor":"#ffffff",
+            "titleColor":"#000000",
             "titleFont":"18"
         },
         "tabbar":

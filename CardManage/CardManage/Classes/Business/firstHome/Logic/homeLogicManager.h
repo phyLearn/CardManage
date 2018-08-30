@@ -10,4 +10,8 @@
 
 @interface homeLogicManager : baseLogicManager
 
+//注册通知
+- (void)registerObserWithDele:(id)delegate;
+//销毁通知
+- (void)removeAllObserWithDele:(id)delegate;
 @end

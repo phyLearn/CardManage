@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RouteImport.h"
 
 @interface appRoute : NSObject
 
@@ -14,4 +15,5 @@
 
 //需要判断登录状态，只有登录成功了才能继续往下走
 - (void)loginAbountWithVC:(UIViewController *)vc Complete:(void(^)(void))complete;
+
 @end
