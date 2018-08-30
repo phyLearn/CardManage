@@ -32,6 +32,12 @@
 		3A4EF6AD2137980B005CE3E3 /* CertificationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EF6AC2137980B005CE3E3 /* CertificationHeaderView.xib */; };
 		3A4EF6AF21379D3F005CE3E3 /* CertificationRowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EF6AE21379D3F005CE3E3 /* CertificationRowView.xib */; };
 		3A4EF6B62137B5ED005CE3E3 /* CertificationListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6B52137B5ED005CE3E3 /* CertificationListData.m */; };
+		3A4EF6C021380755005CE3E3 /* userCheckOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6BE21380755005CE3E3 /* userCheckOutViewController.m */; };
+		3A4EF6C121380755005CE3E3 /* userCheckOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EF6BF21380755005CE3E3 /* userCheckOutViewController.xib */; };
+		3A4EF6C521380799005CE3E3 /* userCheckOutLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6C421380799005CE3E3 /* userCheckOutLogicManager.m */; };
+		3A4EF6C8213807BA005CE3E3 /* userCheckOutMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6C7213807BA005CE3E3 /* userCheckOutMainView.m */; };
+		3A4EF6CA213807D3005CE3E3 /* userCheckOutMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EF6C9213807D3005CE3E3 /* userCheckOutMainView.xib */; };
+		3A4EF6CD21381F91005CE3E3 /* appRoute+userCheckOutRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6CC21381F91005CE3E3 /* appRoute+userCheckOutRoute.m */; };
 		3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6A920EB16D600E54255 /* appAppearInfo.m */; };
 		3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */; };
 		3AB48B742135312C007F268F /* homeMainView+addView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B732135312C007F268F /* homeMainView+addView.m */; };
@@ -144,6 +150,17 @@
 		3A4EF6AE21379D3F005CE3E3 /* CertificationRowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CertificationRowView.xib; sourceTree = "<group>"; };
 		3A4EF6B42137B5ED005CE3E3 /* CertificationListData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificationListData.h; sourceTree = "<group>"; };
 		3A4EF6B52137B5ED005CE3E3 /* CertificationListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertificationListData.m; sourceTree = "<group>"; };
+		3A4EF6BD21380755005CE3E3 /* userCheckOutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = userCheckOutViewController.h; sourceTree = "<group>"; };
+		3A4EF6BE21380755005CE3E3 /* userCheckOutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userCheckOutViewController.m; sourceTree = "<group>"; };
+		3A4EF6BF21380755005CE3E3 /* userCheckOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = userCheckOutViewController.xib; sourceTree = "<group>"; };
+		3A4EF6C22138076C005CE3E3 /* userCheckOutImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = userCheckOutImport.h; sourceTree = "<group>"; };
+		3A4EF6C321380799005CE3E3 /* userCheckOutLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = userCheckOutLogicManager.h; sourceTree = "<group>"; };
+		3A4EF6C421380799005CE3E3 /* userCheckOutLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userCheckOutLogicManager.m; sourceTree = "<group>"; };
+		3A4EF6C6213807BA005CE3E3 /* userCheckOutMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = userCheckOutMainView.h; sourceTree = "<group>"; };
+		3A4EF6C7213807BA005CE3E3 /* userCheckOutMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userCheckOutMainView.m; sourceTree = "<group>"; };
+		3A4EF6C9213807D3005CE3E3 /* userCheckOutMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = userCheckOutMainView.xib; sourceTree = "<group>"; };
+		3A4EF6CB21381F91005CE3E3 /* appRoute+userCheckOutRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appRoute+userCheckOutRoute.h"; sourceTree = "<group>"; };
+		3A4EF6CC21381F91005CE3E3 /* appRoute+userCheckOutRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "appRoute+userCheckOutRoute.m"; sourceTree = "<group>"; };
 		3A57B6A820EB16D600E54255 /* appAppearInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = appAppearInfo.h; sourceTree = "<group>"; };
 		3A57B6A920EB16D600E54255 /* appAppearInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appAppearInfo.m; sourceTree = "<group>"; };
 		3A57B6AB20EB1B8900E54255 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
@@ -318,6 +335,8 @@
 				3A41AF922136617000C8F5EE /* appRoute.m */,
 				3A4EF6A0213791F0005CE3E3 /* appRoute+CertificationRoute.h */,
 				3A4EF6A1213791F0005CE3E3 /* appRoute+CertificationRoute.m */,
+				3A4EF6CB21381F91005CE3E3 /* appRoute+userCheckOutRoute.h */,
+				3A4EF6CC21381F91005CE3E3 /* appRoute+userCheckOutRoute.m */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -421,6 +440,101 @@
 			children = (
 				3A4EF6B42137B5ED005CE3E3 /* CertificationListData.h */,
 				3A4EF6B52137B5ED005CE3E3 /* CertificationListData.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A4EF6B7213806B9005CE3E3 /* userCheckOut */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF6B8213806B9005CE3E3 /* logicManager */,
+				3A4EF6B9213806B9005CE3E3 /* Controller */,
+				3A4EF6BA213806B9005CE3E3 /* View */,
+				3A4EF6BB213806B9005CE3E3 /* inport */,
+				3A4EF6BC213806B9005CE3E3 /* Data */,
+			);
+			path = userCheckOut;
+			sourceTree = "<group>";
+		};
+		3A4EF6B8213806B9005CE3E3 /* logicManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF6C321380799005CE3E3 /* userCheckOutLogicManager.h */,
+				3A4EF6C421380799005CE3E3 /* userCheckOutLogicManager.m */,
+			);
+			path = logicManager;
+			sourceTree = "<group>";
+		};
+		3A4EF6B9213806B9005CE3E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF6BD21380755005CE3E3 /* userCheckOutViewController.h */,
+				3A4EF6BE21380755005CE3E3 /* userCheckOutViewController.m */,
+				3A4EF6BF21380755005CE3E3 /* userCheckOutViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A4EF6BA213806B9005CE3E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF6C6213807BA005CE3E3 /* userCheckOutMainView.h */,
+				3A4EF6C7213807BA005CE3E3 /* userCheckOutMainView.m */,
+				3A4EF6C9213807D3005CE3E3 /* userCheckOutMainView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A4EF6BB213806B9005CE3E3 /* inport */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF6C22138076C005CE3E3 /* userCheckOutImport.h */,
+			);
+			path = inport;
+			sourceTree = "<group>";
+		};
+		3A4EF6BC213806B9005CE3E3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A4EF6CE213821D5005CE3E3 /* faceCheck */ = {
+			isa = PBXGroup;
+			children = (
+				3A4EF6CF213821D5005CE3E3 /* logicManager */,
+				3A4EF6D0213821D5005CE3E3 /* Controller */,
+				3A4EF6D1213821D5005CE3E3 /* inport */,
+				3A4EF6D2213821D5005CE3E3 /* Data */,
+			);
+			path = faceCheck;
+			sourceTree = "<group>";
+		};
+		3A4EF6CF213821D5005CE3E3 /* logicManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = logicManager;
+			sourceTree = "<group>";
+		};
+		3A4EF6D0213821D5005CE3E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A4EF6D1213821D5005CE3E3 /* inport */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = inport;
+			sourceTree = "<group>";
+		};
+		3A4EF6D2213821D5005CE3E3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -573,6 +687,8 @@
 		3AD7AD0620E5C42A000FDBA5 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				3A4EF6CE213821D5005CE3E3 /* faceCheck */,
+				3A4EF6B7213806B9005CE3E3 /* userCheckOut */,
 				3A4EF6882137814C005CE3E3 /* certificationCenter */,
 				3A41AF902136611900C8F5EE /* Route */,
 				3A57B6AE20EB286600E54255 /* login */,
@@ -829,7 +945,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4EF6C121380755005CE3E3 /* userCheckOutViewController.xib in Resources */,
 				3AB48B9121354838007F268F /* myMainCell.xib in Resources */,
+				3A4EF6CA213807D3005CE3E3 /* userCheckOutMainView.xib in Resources */,
 				3A41AFAC2136801300C8F5EE /* loginMainViewController.xib in Resources */,
 				3AD7ACD820E5BD55000FDBA5 /* LaunchScreen.storyboard in Resources */,
 				3AF59E8021350EF1005D4280 /* homeViewController.xib in Resources */,
@@ -950,6 +1068,8 @@
 				3AB48B9F213563DF007F268F /* myMainView+addView.m in Sources */,
 				3AF59E7E21350EF1005D4280 /* homeMainView.m in Sources */,
 				3AB48B9421354C90007F268F /* myMainCelllListBtn.m in Sources */,
+				3A4EF6CD21381F91005CE3E3 /* appRoute+userCheckOutRoute.m in Sources */,
+				3A4EF6C8213807BA005CE3E3 /* userCheckOutMainView.m in Sources */,
 				3AD7AD0320E5C397000FDBA5 /* HYNetworkCache.m in Sources */,
 				3AD7AD2220E5C517000FDBA5 /* NSTimer+addition.m in Sources */,
 				3AD7AD1020E5C484000FDBA5 /* AppBaseViewController.m in Sources */,
@@ -959,6 +1079,7 @@
 				3AD7AD1120E5C484000FDBA5 /* MainNavigationController.m in Sources */,
 				3AB48B9021354838007F268F /* myMainCell.m in Sources */,
 				3A41AFAF2136987E00C8F5EE /* newsLoginView.m in Sources */,
+				3A4EF6C021380755005CE3E3 /* userCheckOutViewController.m in Sources */,
 				3AB48B85213543E8007F268F /* secondHomeViewController.m in Sources */,
 				3AD7AD2720E5C9C9000FDBA5 /* LocalData.m in Sources */,
 				3AD7AD2120E5C517000FDBA5 /* UIButton+HYAdd.m in Sources */,
@@ -966,6 +1087,7 @@
 				3A41AFAB2136801300C8F5EE /* loginMainViewController.m in Sources */,
 				3A4EF6A52137969A005CE3E3 /* CertificationHeaderView.m in Sources */,
 				3AD7AD1220E5C484000FDBA5 /* MainTabBarViewController.m in Sources */,
+				3A4EF6C521380799005CE3E3 /* userCheckOutLogicManager.m in Sources */,
 				3AD7AD2420E5C517000FDBA5 /* UITextField+HYAdd.m in Sources */,
 				3AF59E7F21350EF1005D4280 /* homeViewController.m in Sources */,
 				3AF59E6C21350450005D4280 /* baseLogicManager.m in Sources */,

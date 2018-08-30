@@ -22,6 +22,8 @@
         case 0:
         {
             HYLog(@"身份认证");
+            userCheckOutViewController *checkVC = [[userCheckOutViewController alloc] init];
+            [belongVC.navigationController pushViewController:checkVC animated:YES];
         }
             break;
         case 1:
