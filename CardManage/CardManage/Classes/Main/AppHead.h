@@ -17,6 +17,8 @@
 #import "UIView+HYAdd.h"
 #import "appAppearInfo.h"
 #import "UIViewController+Hidden.h"
+#import "faceImport.h"
+
 #pragma mark 调用第三方库的头文件
 #import "YYKit.h"
 #import "Masonry.h"

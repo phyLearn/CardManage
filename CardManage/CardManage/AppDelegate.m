@@ -22,6 +22,8 @@
     self.window.rootViewController = [[MainTabBarViewController alloc] init];
     [self.window makeKeyWindow];
     
+    //初始化科大讯飞SDK
+    [[faceLogicManager shared] startIFlyFace];
     return YES;
 }
 
