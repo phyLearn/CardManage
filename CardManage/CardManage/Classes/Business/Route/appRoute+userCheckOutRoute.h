@@ -10,7 +10,7 @@
 
 @interface appRoute (userCheckOutRoute)
 
-//跳转到面部识别页面
-- (void)routeToFaceCheckWithBelongVC:(UIViewController *)belongVC;
+//跳转到面部识别页面,complete:将图片结果返回
+- (void)routeToFaceCheckWithBelongVC:(UIViewController *)belongVC complete:(void(^)(UIImage *image))complete;
 
 @end

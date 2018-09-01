@@ -113,11 +113,11 @@
     
     self.previewLayer=self.captureManager.previewLayer;
     
-//    self.captureManager.previewLayer.frame= self.previewView.frame;
-    CGFloat previewWidth = AppScreenWidth / 2;
-    CGFloat previewHeight = previewWidth;
-    self.captureManager.previewLayer.frame = CGRectMake(0, 0, previewWidth, previewHeight);
-    self.captureManager.previewLayer.cornerRadius = previewWidth / 2;
+    self.captureManager.previewLayer.frame= self.previewView.frame;
+//    CGFloat previewWidth = AppScreenWidth / 2;
+//    CGFloat previewHeight = previewWidth;
+//    self.captureManager.previewLayer.frame = CGRectMake(0, 0, previewWidth, previewHeight);
+//    self.captureManager.previewLayer.cornerRadius = previewWidth / 2;
     self.captureManager.previewLayer.position=self.previewView.center;
     self.captureManager.previewLayer.videoGravity=AVLayerVideoGravityResizeAspectFill;
     [self.previewView.layer addSublayer:self.captureManager.previewLayer];
@@ -181,6 +181,7 @@
             HYLog(@"验证之后的图片");
             if(self.takePhotoResultBlock){
                 self.takePhotoResultBlock(myImage);
+                [self.navigationController popViewControllerAnimated:YES];
             }
             //停止摄像
             [self.previewLayer.session stopRunning];

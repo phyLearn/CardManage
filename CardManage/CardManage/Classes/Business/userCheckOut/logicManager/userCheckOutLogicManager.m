@@ -9,6 +9,11 @@
 #import "userCheckOutLogicManager.h"
 #import "userCheckOutImport.h"
 
+@interface userCheckOutLogicManager()
+
+@property (nonatomic, strong) userCheckOutMainView *checkOutView;
+
+@end
 @implementation userCheckOutLogicManager
 
 +(instancetype)shared{
@@ -24,9 +29,9 @@
 - (void)startLogicManagerWithViewController:(UIViewController *)vc{
     self.belongVC = vc;
     vc.title = @"身份认证";
-    userCheckOutMainView *checkOutView = [[NSBundle mainBundle] loadNibNamed:@"userCheckOutMainView" owner:self options:0][0];
-    checkOutView.frame = vc.view.frame;
-    [vc.view addSubview:checkOutView];
+    self.checkOutView = [[NSBundle mainBundle] loadNibNamed:@"userCheckOutMainView" owner:self options:0][0];
+    self.checkOutView.frame = vc.view.frame;
+    [vc.view addSubview:self.checkOutView];
 }
 
 - (void)registerObserWithDele:(id)delegate{
@@ -34,5 +39,9 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     [[NSNotificationCenter defaultCenter] addObserver:delegate selector:@selector(faceBtnAction) name:@"REGISTERFACEBTNCLICK" object:nil];
 #pragma clang diagnostic pop
+}
+
+- (void)refreshFaceImage:(UIImage *)image{
+    [self.checkOutView refreshFaceImageViewWithImage:image];
 }
 @end

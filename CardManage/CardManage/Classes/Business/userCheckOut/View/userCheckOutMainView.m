@@ -35,4 +35,8 @@
     [self addGestureRecognizer:faceTap];
 }
 
+- (void)refreshFaceImageViewWithImage:(UIImage *)image{
+    [self.faceImageView setImage:image];
+}
+
 @end

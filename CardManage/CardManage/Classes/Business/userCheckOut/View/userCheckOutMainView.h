@@ -10,4 +10,7 @@
 
 @interface userCheckOutMainView : UIView
 
+//设置人脸图片
+- (void)refreshFaceImageViewWithImage:(UIImage *)image;
+
 @end

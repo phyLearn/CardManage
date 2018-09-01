@@ -24,7 +24,9 @@
 
 //人脸识别点击事件
 - (void)faceBtnAction{
-    [[appRoute shared] routeToFaceCheckWithBelongVC:self];
+    [[appRoute shared] routeToFaceCheckWithBelongVC:self complete:^(UIImage *image) {
+        [[userCheckOutLogicManager shared] refreshFaceImage:image];
+    }];
 }
 
 - (void)dealloc{

@@ -10,4 +10,6 @@
 
 @interface userCheckOutLogicManager : baseLogicManager
 
+- (void)refreshFaceImage:(UIImage *)image;
+
 @end
