@@ -55,6 +55,15 @@
 		3A4EF6F321382A78005CE3E3 /* faceLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF6F221382A78005CE3E3 /* faceLogicManager.m */; };
 		3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6A920EB16D600E54255 /* appAppearInfo.m */; };
 		3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */; };
+		3A7014C0213907F400B9069B /* FaceCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014BF213907F400B9069B /* FaceCheckViewController.m */; };
+		3A7014D821391CAF00B9069B /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014C321391CAF00B9069B /* CanvasView.m */; };
+		3A7014D921391CAF00B9069B /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014C621391CAF00B9069B /* CaptureManager.m */; };
+		3A7014DA21391CAF00B9069B /* IFlyFaceResultKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014C921391CAF00B9069B /* IFlyFaceResultKeys.m */; };
+		3A7014DB21391CAF00B9069B /* IFlyFaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014CC21391CAF00B9069B /* IFlyFaceImage.m */; };
+		3A7014DC21391CAF00B9069B /* UIImage+compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014CD21391CAF00B9069B /* UIImage+compress.m */; };
+		3A7014DD21391CAF00B9069B /* CalculatorTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014CF21391CAF00B9069B /* CalculatorTools.m */; };
+		3A7014DE21391CAF00B9069B /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014D321391CAF00B9069B /* UIImage+Extensions.m */; };
+		3A7014DF21391CAF00B9069B /* PermissionDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7014D721391CAF00B9069B /* PermissionDetector.m */; };
 		3AB48B742135312C007F268F /* homeMainView+addView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB48B732135312C007F268F /* homeMainView+addView.m */; };
 		3AB48B82213543E8007F268F /* myViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB48B79213543E8007F268F /* myViewController.xib */; };
 		3AB48B83213543E8007F268F /* secondHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB48B7C213543E8007F268F /* secondHomeViewController.xib */; };
@@ -197,6 +206,25 @@
 		3A57B6A920EB16D600E54255 /* appAppearInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appAppearInfo.m; sourceTree = "<group>"; };
 		3A57B6AB20EB1B8900E54255 /* UIViewController+Hidden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Hidden.h"; sourceTree = "<group>"; };
 		3A57B6AC20EB1B8900E54255 /* UIViewController+Hidden.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Hidden.m"; sourceTree = "<group>"; };
+		3A7014BE213907F400B9069B /* FaceCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceCheckViewController.h; sourceTree = "<group>"; };
+		3A7014BF213907F400B9069B /* FaceCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceCheckViewController.m; sourceTree = "<group>"; };
+		3A7014C321391CAF00B9069B /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		3A7014C421391CAF00B9069B /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		3A7014C621391CAF00B9069B /* CaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManager.m; sourceTree = "<group>"; };
+		3A7014C721391CAF00B9069B /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
+		3A7014C921391CAF00B9069B /* IFlyFaceResultKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceResultKeys.m; sourceTree = "<group>"; };
+		3A7014CA21391CAF00B9069B /* IFlyFaceResultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceResultKeys.h; sourceTree = "<group>"; };
+		3A7014CC21391CAF00B9069B /* IFlyFaceImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFlyFaceImage.m; sourceTree = "<group>"; };
+		3A7014CD21391CAF00B9069B /* UIImage+compress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+compress.m"; sourceTree = "<group>"; };
+		3A7014CE21391CAF00B9069B /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		3A7014CF21391CAF00B9069B /* CalculatorTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTools.m; sourceTree = "<group>"; };
+		3A7014D021391CAF00B9069B /* IFlyFaceImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFlyFaceImage.h; sourceTree = "<group>"; };
+		3A7014D121391CAF00B9069B /* UIImage+compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+compress.h"; sourceTree = "<group>"; };
+		3A7014D221391CAF00B9069B /* CalculatorTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorTools.h; sourceTree = "<group>"; };
+		3A7014D321391CAF00B9069B /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		3A7014D421391CAF00B9069B /* DemoPreDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPreDefine.h; sourceTree = "<group>"; };
+		3A7014D621391CAF00B9069B /* PermissionDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionDetector.h; sourceTree = "<group>"; };
+		3A7014D721391CAF00B9069B /* PermissionDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionDetector.m; sourceTree = "<group>"; };
 		3AB48B722135312C007F268F /* homeMainView+addView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "homeMainView+addView.h"; sourceTree = "<group>"; };
 		3AB48B732135312C007F268F /* homeMainView+addView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "homeMainView+addView.m"; sourceTree = "<group>"; };
 		3AB48B79213543E8007F268F /* myViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = myViewController.xib; sourceTree = "<group>"; };
@@ -582,6 +610,8 @@
 		3A4EF6D0213821D5005CE3E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3A7014BE213907F400B9069B /* FaceCheckViewController.h */,
+				3A7014BF213907F400B9069B /* FaceCheckViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -612,6 +642,7 @@
 		3A4EF6D4213827BD005CE3E3 /* FaceCheck */ = {
 			isa = PBXGroup;
 			children = (
+				3A7014C121391CAF00B9069B /* Tools */,
 				3A4EF6D5213827D6005CE3E3 /* iflyMSC.framework */,
 			);
 			path = FaceCheck;
@@ -626,6 +657,70 @@
 				3A41AF882136604300C8F5EE /* View */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		3A7014C121391CAF00B9069B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3A7014C221391CAF00B9069B /* CanvasView */,
+				3A7014C521391CAF00B9069B /* Capture */,
+				3A7014C821391CAF00B9069B /* Result */,
+				3A7014CB21391CAF00B9069B /* Image */,
+				3A7014D421391CAF00B9069B /* DemoPreDefine.h */,
+				3A7014D521391CAF00B9069B /* Permission */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3A7014C221391CAF00B9069B /* CanvasView */ = {
+			isa = PBXGroup;
+			children = (
+				3A7014C321391CAF00B9069B /* CanvasView.m */,
+				3A7014C421391CAF00B9069B /* CanvasView.h */,
+			);
+			path = CanvasView;
+			sourceTree = "<group>";
+		};
+		3A7014C521391CAF00B9069B /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				3A7014C621391CAF00B9069B /* CaptureManager.m */,
+				3A7014C721391CAF00B9069B /* CaptureManager.h */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		3A7014C821391CAF00B9069B /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				3A7014C921391CAF00B9069B /* IFlyFaceResultKeys.m */,
+				3A7014CA21391CAF00B9069B /* IFlyFaceResultKeys.h */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		3A7014CB21391CAF00B9069B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				3A7014CC21391CAF00B9069B /* IFlyFaceImage.m */,
+				3A7014CD21391CAF00B9069B /* UIImage+compress.m */,
+				3A7014CE21391CAF00B9069B /* UIImage+Extensions.h */,
+				3A7014CF21391CAF00B9069B /* CalculatorTools.m */,
+				3A7014D021391CAF00B9069B /* IFlyFaceImage.h */,
+				3A7014D121391CAF00B9069B /* UIImage+compress.h */,
+				3A7014D221391CAF00B9069B /* CalculatorTools.h */,
+				3A7014D321391CAF00B9069B /* UIImage+Extensions.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		3A7014D521391CAF00B9069B /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				3A7014D621391CAF00B9069B /* PermissionDetector.h */,
+				3A7014D721391CAF00B9069B /* PermissionDetector.m */,
+			);
+			path = Permission;
 			sourceTree = "<group>";
 		};
 		3AB48B78213543E8007F268F /* Controller */ = {
@@ -1127,12 +1222,16 @@
 			files = (
 				3AD7ACD020E5BD55000FDBA5 /* ViewController.m in Sources */,
 				3AF59E8521350EF1005D4280 /* homeLogicManager.m in Sources */,
+				3A7014DF21391CAF00B9069B /* PermissionDetector.m in Sources */,
+				3A7014D921391CAF00B9069B /* CaptureManager.m in Sources */,
 				3A41AF9A2136661200C8F5EE /* AppDatabase.m in Sources */,
 				3AB48B84213543E8007F268F /* myViewController.m in Sources */,
 				3AD7AD2020E5C517000FDBA5 /* UIImage+HYAdd.m in Sources */,
 				3AF59E8A2135115B005D4280 /* homeMainViewFirstCell.m in Sources */,
+				3A7014DD21391CAF00B9069B /* CalculatorTools.m in Sources */,
 				3A4EF6AB21379722005CE3E3 /* CertificationMainView.m in Sources */,
 				3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */,
+				3A7014C0213907F400B9069B /* FaceCheckViewController.m in Sources */,
 				3AB48B892135455C007F268F /* myLogicManager.m in Sources */,
 				3A41AFB92136B3D500C8F5EE /* likeLoginTextField.m in Sources */,
 				3AB48B742135312C007F268F /* homeMainView+addView.m in Sources */,
@@ -1141,6 +1240,7 @@
 				3A41AFA2213677F300C8F5EE /* loginLogicManager.m in Sources */,
 				3A57B6AD20EB1B8900E54255 /* UIViewController+Hidden.m in Sources */,
 				3A41AF97213664B700C8F5EE /* AppFMDB.m in Sources */,
+				3A7014DE21391CAF00B9069B /* UIImage+Extensions.m in Sources */,
 				3A41AF9F2136778900C8F5EE /* loginMainView.m in Sources */,
 				3A4EF6A82137970E005CE3E3 /* CertificationRowView.m in Sources */,
 				3A41AF932136617000C8F5EE /* appRoute.m in Sources */,
@@ -1158,13 +1258,17 @@
 				3AD7AD1120E5C484000FDBA5 /* MainNavigationController.m in Sources */,
 				3AB48B9021354838007F268F /* myMainCell.m in Sources */,
 				3A41AFAF2136987E00C8F5EE /* newsLoginView.m in Sources */,
+				3A7014D821391CAF00B9069B /* CanvasView.m in Sources */,
 				3A4EF6C021380755005CE3E3 /* userCheckOutViewController.m in Sources */,
 				3A4EF6F321382A78005CE3E3 /* faceLogicManager.m in Sources */,
 				3AB48B85213543E8007F268F /* secondHomeViewController.m in Sources */,
 				3AD7AD2720E5C9C9000FDBA5 /* LocalData.m in Sources */,
+				3A7014DB21391CAF00B9069B /* IFlyFaceImage.m in Sources */,
 				3AD7AD2120E5C517000FDBA5 /* UIButton+HYAdd.m in Sources */,
 				3AF59E8F2135117B005D4280 /* homeMainViewSecondCell.m in Sources */,
 				3A41AFAB2136801300C8F5EE /* loginMainViewController.m in Sources */,
+				3A7014DA21391CAF00B9069B /* IFlyFaceResultKeys.m in Sources */,
+				3A7014DC21391CAF00B9069B /* UIImage+compress.m in Sources */,
 				3A4EF6A52137969A005CE3E3 /* CertificationHeaderView.m in Sources */,
 				3AD7AD1220E5C484000FDBA5 /* MainTabBarViewController.m in Sources */,
 				3A4EF6C521380799005CE3E3 /* userCheckOutLogicManager.m in Sources */,

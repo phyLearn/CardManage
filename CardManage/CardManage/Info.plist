@@ -4,6 +4,8 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>使用您的位置来提高安全性</string>
+	<key>NSCameraUsageDescription</key>
+	<string>使用您的摄像头以获取信息</string>
 	<key>NSContactsUsageDescription</key>
 	<string>使用您的联系人来方便访问</string>
 	<key>CFBundleDevelopmentRegion</key>

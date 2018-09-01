@@ -12,5 +12,10 @@
 
 - (void)routeToFaceCheckWithBelongVC:(UIViewController *)belongVC{
     HYLog(@"跳转到面部识别页面");
+    FaceCheckViewController *faceVC = [[FaceCheckViewController alloc] init];
+    faceVC.takePhotoResultBlock = ^(UIImage *image){
+        
+    };
+    [belongVC.navigationController pushViewController:faceVC animated:YES];
 }
 @end

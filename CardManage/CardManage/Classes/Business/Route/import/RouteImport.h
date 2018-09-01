@@ -21,5 +21,6 @@
 
 #pragma mark --- 身份认证 ---
 #import "userCheckOutViewController.h"
-
+//人脸识别页面
+#import "FaceCheckViewController.h"
 #endif /* RouteImport_h */
