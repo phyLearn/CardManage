@@ -21,6 +21,25 @@
 		3A41AFB4213698D200C8F5EE /* newsLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41AFB3213698D200C8F5EE /* newsLoginView.xib */; };
 		3A41AFB6213698DD00C8F5EE /* passwordLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A41AFB5213698DD00C8F5EE /* passwordLoginView.xib */; };
 		3A41AFB92136B3D500C8F5EE /* likeLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */; };
+		3A43A004213AE34200959E30 /* LinkManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A003213AE34200959E30 /* LinkManViewController.m */; };
+		3A43A007213AE36800959E30 /* LinkManLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A006213AE36800959E30 /* LinkManLogicManager.m */; };
+		3A43A00B213B779300959E30 /* LinkManMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A00A213B779300959E30 /* LinkManMainView.m */; };
+		3A43A00E213B901100959E30 /* appRoute+LinkManRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A00D213B901100959E30 /* appRoute+LinkManRoute.m */; };
+		3A43A012213BABCE00959E30 /* LinkManMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A010213BABCE00959E30 /* LinkManMainCell.m */; };
+		3A43A01B213BC30300959E30 /* AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A01A213BC30300959E30 /* AddCardViewController.m */; };
+		3A43A01E213BC33A00959E30 /* AddCardLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A01D213BC33A00959E30 /* AddCardLogicManager.m */; };
+		3A43A024213BC4EC00959E30 /* AddCardMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A023213BC4EC00959E30 /* AddCardMainView.m */; };
+		3A43A02A213BC7EF00959E30 /* appRoute+AddCardRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A029213BC7EF00959E30 /* appRoute+AddCardRoute.m */; };
+		3A43A02E213BCA8000959E30 /* AddCardMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A02C213BCA8000959E30 /* AddCardMainCell.m */; };
+		3A43A03D213BD78100959E30 /* LikeLinkManMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A03A213BD78100959E30 /* LikeLinkManMainCell.m */; };
+		3A43A03E213BD78100959E30 /* LikeLinkManMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43A03C213BD78100959E30 /* LikeLinkManMainCell.xib */; };
+		3A43A046213BDB2500959E30 /* JobNewsLogicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A045213BDB2500959E30 /* JobNewsLogicManager.m */; };
+		3A43A049213BDB3E00959E30 /* JobNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A048213BDB3E00959E30 /* JobNewsViewController.m */; };
+		3A43A04C213BDB5300959E30 /* JobNewsMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A04B213BDB5300959E30 /* JobNewsMainView.m */; };
+		3A43A050213BDBFD00959E30 /* JobNewsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A04F213BDBFD00959E30 /* JobNewsHeaderView.m */; };
+		3A43A055213BDC2A00959E30 /* JobNewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43A054213BDC2A00959E30 /* JobNewsHeaderView.xib */; };
+		3A43A115213CF52800959E30 /* JobNewsBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A43A114213CF52800959E30 /* JobNewsBottomView.m */; };
+		3A43A117213CF53400959E30 /* JobNewsBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A43A116213CF53400959E30 /* JobNewsBottomView.xib */; };
 		3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */; };
 		3A4EF69021378216005CE3E3 /* CertificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EF68E21378216005CE3E3 /* CertificationCenterViewController.m */; };
 		3A4EF69121378216005CE3E3 /* CertificationCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4EF68F21378216005CE3E3 /* CertificationCenterViewController.xib */; };
@@ -106,6 +125,7 @@
 		3AF59E8F2135117B005D4280 /* homeMainViewSecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59E8D2135117B005D4280 /* homeMainViewSecondCell.m */; };
 		3AF59E902135117B005D4280 /* homeMainViewSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF59E8E2135117B005D4280 /* homeMainViewSecondCell.xib */; };
 		3AFAEC8720EF01C900B58E32 /* updownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFAEC8620EF01C900B58E32 /* updownView.m */; };
+		3AFCB116213D0271008BACEE /* CommonPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFCB115213D0271008BACEE /* CommonPopView.m */; };
 		BAA76285327BC2DA2D371B82 /* libPods-CardManage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */; };
 		C113FFE52D3127B86B61EC29 /* libPods-CardManageUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AA99EF15176DD2A8A9CD8C /* libPods-CardManageUITests.a */; };
 /* End PBXBuildFile section */
@@ -154,6 +174,44 @@
 		3A41AFB72136B3D500C8F5EE /* likeLoginTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = likeLoginTextField.h; sourceTree = "<group>"; };
 		3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = likeLoginTextField.m; sourceTree = "<group>"; };
 		3A41AFBB2136DB9800C8F5EE /* RouteImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouteImport.h; sourceTree = "<group>"; };
+		3A43A002213AE34200959E30 /* LinkManViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkManViewController.h; sourceTree = "<group>"; };
+		3A43A003213AE34200959E30 /* LinkManViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkManViewController.m; sourceTree = "<group>"; };
+		3A43A005213AE36800959E30 /* LinkManLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkManLogicManager.h; sourceTree = "<group>"; };
+		3A43A006213AE36800959E30 /* LinkManLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkManLogicManager.m; sourceTree = "<group>"; };
+		3A43A008213AE38400959E30 /* LinkManImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkManImport.h; sourceTree = "<group>"; };
+		3A43A009213B779300959E30 /* LinkManMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkManMainView.h; sourceTree = "<group>"; };
+		3A43A00A213B779300959E30 /* LinkManMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkManMainView.m; sourceTree = "<group>"; };
+		3A43A00C213B901100959E30 /* appRoute+LinkManRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appRoute+LinkManRoute.h"; sourceTree = "<group>"; };
+		3A43A00D213B901100959E30 /* appRoute+LinkManRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "appRoute+LinkManRoute.m"; sourceTree = "<group>"; };
+		3A43A00F213BABCE00959E30 /* LinkManMainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkManMainCell.h; sourceTree = "<group>"; };
+		3A43A010213BABCE00959E30 /* LinkManMainCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkManMainCell.m; sourceTree = "<group>"; };
+		3A43A019213BC30300959E30 /* AddCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardViewController.h; sourceTree = "<group>"; };
+		3A43A01A213BC30300959E30 /* AddCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardViewController.m; sourceTree = "<group>"; };
+		3A43A01C213BC33A00959E30 /* AddCardLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardLogicManager.h; sourceTree = "<group>"; };
+		3A43A01D213BC33A00959E30 /* AddCardLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardLogicManager.m; sourceTree = "<group>"; };
+		3A43A021213BC4CF00959E30 /* AddCardImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardImport.h; sourceTree = "<group>"; };
+		3A43A022213BC4EC00959E30 /* AddCardMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardMainView.h; sourceTree = "<group>"; };
+		3A43A023213BC4EC00959E30 /* AddCardMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardMainView.m; sourceTree = "<group>"; };
+		3A43A028213BC7EF00959E30 /* appRoute+AddCardRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appRoute+AddCardRoute.h"; sourceTree = "<group>"; };
+		3A43A029213BC7EF00959E30 /* appRoute+AddCardRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "appRoute+AddCardRoute.m"; sourceTree = "<group>"; };
+		3A43A02B213BCA8000959E30 /* AddCardMainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCardMainCell.h; sourceTree = "<group>"; };
+		3A43A02C213BCA8000959E30 /* AddCardMainCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCardMainCell.m; sourceTree = "<group>"; };
+		3A43A03A213BD78100959E30 /* LikeLinkManMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeLinkManMainCell.m; sourceTree = "<group>"; };
+		3A43A03B213BD78100959E30 /* LikeLinkManMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeLinkManMainCell.h; sourceTree = "<group>"; };
+		3A43A03C213BD78100959E30 /* LikeLinkManMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LikeLinkManMainCell.xib; sourceTree = "<group>"; };
+		3A43A044213BDB2500959E30 /* JobNewsLogicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobNewsLogicManager.h; sourceTree = "<group>"; };
+		3A43A045213BDB2500959E30 /* JobNewsLogicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobNewsLogicManager.m; sourceTree = "<group>"; };
+		3A43A047213BDB3E00959E30 /* JobNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobNewsViewController.h; sourceTree = "<group>"; };
+		3A43A048213BDB3E00959E30 /* JobNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobNewsViewController.m; sourceTree = "<group>"; };
+		3A43A04A213BDB5300959E30 /* JobNewsMainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobNewsMainView.h; sourceTree = "<group>"; };
+		3A43A04B213BDB5300959E30 /* JobNewsMainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobNewsMainView.m; sourceTree = "<group>"; };
+		3A43A04D213BDB6300959E30 /* JobNewsImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobNewsImport.h; sourceTree = "<group>"; };
+		3A43A04E213BDBFD00959E30 /* JobNewsHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobNewsHeaderView.h; sourceTree = "<group>"; };
+		3A43A04F213BDBFD00959E30 /* JobNewsHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobNewsHeaderView.m; sourceTree = "<group>"; };
+		3A43A054213BDC2A00959E30 /* JobNewsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobNewsHeaderView.xib; sourceTree = "<group>"; };
+		3A43A113213CF52800959E30 /* JobNewsBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobNewsBottomView.h; sourceTree = "<group>"; };
+		3A43A114213CF52800959E30 /* JobNewsBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobNewsBottomView.m; sourceTree = "<group>"; };
+		3A43A116213CF53400959E30 /* JobNewsBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobNewsBottomView.xib; sourceTree = "<group>"; };
 		3A49A11920EE0EFF0023C830 /* likeLoginBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = likeLoginBtn.h; sourceTree = "<group>"; };
 		3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = likeLoginBtn.m; sourceTree = "<group>"; };
 		3A4EF68D21378216005CE3E3 /* CertificationCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificationCenterViewController.h; sourceTree = "<group>"; };
@@ -305,6 +363,8 @@
 		3AF59E8E2135117B005D4280 /* homeMainViewSecondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeMainViewSecondCell.xib; sourceTree = "<group>"; };
 		3AFAEC8520EF01C900B58E32 /* updownView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = updownView.h; sourceTree = "<group>"; };
 		3AFAEC8620EF01C900B58E32 /* updownView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = updownView.m; sourceTree = "<group>"; };
+		3AFCB114213D0271008BACEE /* CommonPopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonPopView.h; sourceTree = "<group>"; };
+		3AFCB115213D0271008BACEE /* CommonPopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonPopView.m; sourceTree = "<group>"; };
 		43ACF980AA55CAC386E50DFB /* libPods-CardManage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AA99EF15176DD2A8A9CD8C /* libPods-CardManageUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CardManageUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8635DC11CBC93372943E274A /* Pods-CardManageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardManageUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardManageUITests/Pods-CardManageUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -424,6 +484,10 @@
 				3A4EF6A1213791F0005CE3E3 /* appRoute+CertificationRoute.m */,
 				3A4EF6CB21381F91005CE3E3 /* appRoute+userCheckOutRoute.h */,
 				3A4EF6CC21381F91005CE3E3 /* appRoute+userCheckOutRoute.m */,
+				3A43A00C213B901100959E30 /* appRoute+LinkManRoute.h */,
+				3A43A00D213B901100959E30 /* appRoute+LinkManRoute.m */,
+				3A43A028213BC7EF00959E30 /* appRoute+AddCardRoute.h */,
+				3A43A029213BC7EF00959E30 /* appRoute+AddCardRoute.m */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -455,15 +519,168 @@
 			path = import;
 			sourceTree = "<group>";
 		};
+		3A439FFD213AE2B000959E30 /* linkMan */ = {
+			isa = PBXGroup;
+			children = (
+				3A439FFE213AE2B000959E30 /* logicManager */,
+				3A439FFF213AE2B000959E30 /* Controller */,
+				3A43A000213AE2B000959E30 /* View */,
+				3A43A001213AE2B000959E30 /* import */,
+			);
+			path = linkMan;
+			sourceTree = "<group>";
+		};
+		3A439FFE213AE2B000959E30 /* logicManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A005213AE36800959E30 /* LinkManLogicManager.h */,
+				3A43A006213AE36800959E30 /* LinkManLogicManager.m */,
+			);
+			path = logicManager;
+			sourceTree = "<group>";
+		};
+		3A439FFF213AE2B000959E30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A002213AE34200959E30 /* LinkManViewController.h */,
+				3A43A003213AE34200959E30 /* LinkManViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A43A000213AE2B000959E30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A009213B779300959E30 /* LinkManMainView.h */,
+				3A43A00A213B779300959E30 /* LinkManMainView.m */,
+				3A43A00F213BABCE00959E30 /* LinkManMainCell.h */,
+				3A43A010213BABCE00959E30 /* LinkManMainCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A43A001213AE2B000959E30 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A008213AE38400959E30 /* LinkManImport.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
+		3A43A014213BC2C700959E30 /* addCard */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A01F213BC37400959E30 /* import */,
+				3A43A015213BC2C700959E30 /* logicManager */,
+				3A43A016213BC2C700959E30 /* Controller */,
+				3A43A017213BC2C700959E30 /* View */,
+			);
+			path = addCard;
+			sourceTree = "<group>";
+		};
+		3A43A015213BC2C700959E30 /* logicManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A01C213BC33A00959E30 /* AddCardLogicManager.h */,
+				3A43A01D213BC33A00959E30 /* AddCardLogicManager.m */,
+			);
+			path = logicManager;
+			sourceTree = "<group>";
+		};
+		3A43A016213BC2C700959E30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A019213BC30300959E30 /* AddCardViewController.h */,
+				3A43A01A213BC30300959E30 /* AddCardViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A43A017213BC2C700959E30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A022213BC4EC00959E30 /* AddCardMainView.h */,
+				3A43A023213BC4EC00959E30 /* AddCardMainView.m */,
+				3A43A02B213BCA8000959E30 /* AddCardMainCell.h */,
+				3A43A02C213BCA8000959E30 /* AddCardMainCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A43A01F213BC37400959E30 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A021213BC4CF00959E30 /* AddCardImport.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
+		3A43A03F213BDAA000959E30 /* jobNews */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A040213BDAA000959E30 /* logicManager */,
+				3A43A041213BDAA000959E30 /* Controller */,
+				3A43A042213BDAA000959E30 /* View */,
+				3A43A043213BDAA000959E30 /* import */,
+			);
+			path = jobNews;
+			sourceTree = "<group>";
+		};
+		3A43A040213BDAA000959E30 /* logicManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A044213BDB2500959E30 /* JobNewsLogicManager.h */,
+				3A43A045213BDB2500959E30 /* JobNewsLogicManager.m */,
+			);
+			path = logicManager;
+			sourceTree = "<group>";
+		};
+		3A43A041213BDAA000959E30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A047213BDB3E00959E30 /* JobNewsViewController.h */,
+				3A43A048213BDB3E00959E30 /* JobNewsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A43A042213BDAA000959E30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A04A213BDB5300959E30 /* JobNewsMainView.h */,
+				3A43A04B213BDB5300959E30 /* JobNewsMainView.m */,
+				3A43A04E213BDBFD00959E30 /* JobNewsHeaderView.h */,
+				3A43A04F213BDBFD00959E30 /* JobNewsHeaderView.m */,
+				3A43A054213BDC2A00959E30 /* JobNewsHeaderView.xib */,
+				3A43A113213CF52800959E30 /* JobNewsBottomView.h */,
+				3A43A114213CF52800959E30 /* JobNewsBottomView.m */,
+				3A43A116213CF53400959E30 /* JobNewsBottomView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A43A043213BDAA000959E30 /* import */ = {
+			isa = PBXGroup;
+			children = (
+				3A43A04D213BDB6300959E30 /* JobNewsImport.h */,
+			);
+			path = import;
+			sourceTree = "<group>";
+		};
 		3A49A11820EE0EE50023C830 /* commonView */ = {
 			isa = PBXGroup;
 			children = (
+				3A43A03B213BD78100959E30 /* LikeLinkManMainCell.h */,
+				3A43A03A213BD78100959E30 /* LikeLinkManMainCell.m */,
+				3A43A03C213BD78100959E30 /* LikeLinkManMainCell.xib */,
 				3A49A11920EE0EFF0023C830 /* likeLoginBtn.h */,
 				3A49A11A20EE0EFF0023C830 /* likeLoginBtn.m */,
 				3AFAEC8520EF01C900B58E32 /* updownView.h */,
 				3AFAEC8620EF01C900B58E32 /* updownView.m */,
 				3A41AFB72136B3D500C8F5EE /* likeLoginTextField.h */,
 				3A41AFB82136B3D500C8F5EE /* likeLoginTextField.m */,
+				3AFCB114213D0271008BACEE /* CommonPopView.h */,
+				3AFCB115213D0271008BACEE /* CommonPopView.m */,
 			);
 			path = commonView;
 			sourceTree = "<group>";
@@ -861,6 +1078,9 @@
 		3AD7AD0620E5C42A000FDBA5 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				3A43A03F213BDAA000959E30 /* jobNews */,
+				3A43A014213BC2C700959E30 /* addCard */,
+				3A439FFD213AE2B000959E30 /* linkMan */,
 				3A4EF6CE213821D5005CE3E3 /* faceCheck */,
 				3A4EF6B7213806B9005CE3E3 /* userCheckOut */,
 				3A4EF6882137814C005CE3E3 /* certificationCenter */,
@@ -1121,10 +1341,12 @@
 			files = (
 				3A4EF6C121380755005CE3E3 /* userCheckOutViewController.xib in Resources */,
 				3AB48B9121354838007F268F /* myMainCell.xib in Resources */,
+				3A43A03E213BD78100959E30 /* LikeLinkManMainCell.xib in Resources */,
 				3A4EF6CA213807D3005CE3E3 /* userCheckOutMainView.xib in Resources */,
 				3A41AFAC2136801300C8F5EE /* loginMainViewController.xib in Resources */,
 				3AD7ACD820E5BD55000FDBA5 /* LaunchScreen.storyboard in Resources */,
 				3AF59E8021350EF1005D4280 /* homeViewController.xib in Resources */,
+				3A43A117213CF53400959E30 /* JobNewsBottomView.xib in Resources */,
 				3A41AFB6213698DD00C8F5EE /* passwordLoginView.xib in Resources */,
 				3AD7ACD520E5BD55000FDBA5 /* Assets.xcassets in Resources */,
 				3AF59E902135117B005D4280 /* homeMainViewSecondCell.xib in Resources */,
@@ -1138,6 +1360,7 @@
 				3A4EF6AF21379D3F005CE3E3 /* CertificationRowView.xib in Resources */,
 				3AB48B9621354C9E007F268F /* myMainCelllListBtn.xib in Resources */,
 				3AB48B82213543E8007F268F /* myViewController.xib in Resources */,
+				3A43A055213BDC2A00959E30 /* JobNewsHeaderView.xib in Resources */,
 				3AD7AD4120E5DA5D000FDBA5 /* ChangeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1223,13 +1446,18 @@
 				3AD7ACD020E5BD55000FDBA5 /* ViewController.m in Sources */,
 				3AF59E8521350EF1005D4280 /* homeLogicManager.m in Sources */,
 				3A7014DF21391CAF00B9069B /* PermissionDetector.m in Sources */,
+				3A43A046213BDB2500959E30 /* JobNewsLogicManager.m in Sources */,
+				3A43A007213AE36800959E30 /* LinkManLogicManager.m in Sources */,
 				3A7014D921391CAF00B9069B /* CaptureManager.m in Sources */,
 				3A41AF9A2136661200C8F5EE /* AppDatabase.m in Sources */,
 				3AB48B84213543E8007F268F /* myViewController.m in Sources */,
 				3AD7AD2020E5C517000FDBA5 /* UIImage+HYAdd.m in Sources */,
+				3A43A050213BDBFD00959E30 /* JobNewsHeaderView.m in Sources */,
 				3AF59E8A2135115B005D4280 /* homeMainViewFirstCell.m in Sources */,
 				3A7014DD21391CAF00B9069B /* CalculatorTools.m in Sources */,
 				3A4EF6AB21379722005CE3E3 /* CertificationMainView.m in Sources */,
+				3A43A012213BABCE00959E30 /* LinkManMainCell.m in Sources */,
+				3A43A01B213BC30300959E30 /* AddCardViewController.m in Sources */,
 				3A49A11B20EE0EFF0023C830 /* likeLoginBtn.m in Sources */,
 				3A7014C0213907F400B9069B /* FaceCheckViewController.m in Sources */,
 				3AB48B892135455C007F268F /* myLogicManager.m in Sources */,
@@ -1244,6 +1472,7 @@
 				3A41AF9F2136778900C8F5EE /* loginMainView.m in Sources */,
 				3A4EF6A82137970E005CE3E3 /* CertificationRowView.m in Sources */,
 				3A41AF932136617000C8F5EE /* appRoute.m in Sources */,
+				3A43A004213AE34200959E30 /* LinkManViewController.m in Sources */,
 				3AB48B9F213563DF007F268F /* myMainView+addView.m in Sources */,
 				3AF59E7E21350EF1005D4280 /* homeMainView.m in Sources */,
 				3AB48B9421354C90007F268F /* myMainCelllListBtn.m in Sources */,
@@ -1254,25 +1483,34 @@
 				3AD7AD1020E5C484000FDBA5 /* AppBaseViewController.m in Sources */,
 				3A57B6AA20EB16D600E54255 /* appAppearInfo.m in Sources */,
 				3AB48B8C213545B3007F268F /* myMainView.m in Sources */,
+				3A43A02A213BC7EF00959E30 /* appRoute+AddCardRoute.m in Sources */,
+				3A43A04C213BDB5300959E30 /* JobNewsMainView.m in Sources */,
 				3A4EF69021378216005CE3E3 /* CertificationCenterViewController.m in Sources */,
 				3AD7AD1120E5C484000FDBA5 /* MainNavigationController.m in Sources */,
 				3AB48B9021354838007F268F /* myMainCell.m in Sources */,
 				3A41AFAF2136987E00C8F5EE /* newsLoginView.m in Sources */,
+				3A43A115213CF52800959E30 /* JobNewsBottomView.m in Sources */,
 				3A7014D821391CAF00B9069B /* CanvasView.m in Sources */,
+				3A43A02E213BCA8000959E30 /* AddCardMainCell.m in Sources */,
 				3A4EF6C021380755005CE3E3 /* userCheckOutViewController.m in Sources */,
 				3A4EF6F321382A78005CE3E3 /* faceLogicManager.m in Sources */,
 				3AB48B85213543E8007F268F /* secondHomeViewController.m in Sources */,
+				3A43A01E213BC33A00959E30 /* AddCardLogicManager.m in Sources */,
 				3AD7AD2720E5C9C9000FDBA5 /* LocalData.m in Sources */,
 				3A7014DB21391CAF00B9069B /* IFlyFaceImage.m in Sources */,
 				3AD7AD2120E5C517000FDBA5 /* UIButton+HYAdd.m in Sources */,
+				3A43A03D213BD78100959E30 /* LikeLinkManMainCell.m in Sources */,
 				3AF59E8F2135117B005D4280 /* homeMainViewSecondCell.m in Sources */,
 				3A41AFAB2136801300C8F5EE /* loginMainViewController.m in Sources */,
+				3AFCB116213D0271008BACEE /* CommonPopView.m in Sources */,
 				3A7014DA21391CAF00B9069B /* IFlyFaceResultKeys.m in Sources */,
 				3A7014DC21391CAF00B9069B /* UIImage+compress.m in Sources */,
 				3A4EF6A52137969A005CE3E3 /* CertificationHeaderView.m in Sources */,
 				3AD7AD1220E5C484000FDBA5 /* MainTabBarViewController.m in Sources */,
 				3A4EF6C521380799005CE3E3 /* userCheckOutLogicManager.m in Sources */,
 				3AD7AD2420E5C517000FDBA5 /* UITextField+HYAdd.m in Sources */,
+				3A43A00B213B779300959E30 /* LinkManMainView.m in Sources */,
+				3A43A024213BC4EC00959E30 /* AddCardMainView.m in Sources */,
 				3AF59E7F21350EF1005D4280 /* homeViewController.m in Sources */,
 				3AF59E6C21350450005D4280 /* baseLogicManager.m in Sources */,
 				3AD7AD0420E5C397000FDBA5 /* HYNetworkHelper.m in Sources */,
@@ -1280,7 +1518,9 @@
 				3A41AFB22136989700C8F5EE /* passwordLoginView.m in Sources */,
 				3A4EF6B62137B5ED005CE3E3 /* CertificationListData.m in Sources */,
 				3AFAEC8720EF01C900B58E32 /* updownView.m in Sources */,
+				3A43A049213BDB3E00959E30 /* JobNewsViewController.m in Sources */,
 				3A4EF6952137829F005CE3E3 /* CertificationLogicManager.m in Sources */,
+				3A43A00E213B901100959E30 /* appRoute+LinkManRoute.m in Sources */,
 				3AD7AD2320E5C517000FDBA5 /* UIView+HYAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

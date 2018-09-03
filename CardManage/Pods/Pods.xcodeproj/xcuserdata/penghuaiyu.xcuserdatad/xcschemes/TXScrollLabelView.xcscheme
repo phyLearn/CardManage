@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EC6FD1130E889B79FE5B309024C435B5"
+               BlueprintIdentifier = "97B9C940C25E657682448BC567322350"
                BlueprintName = "TXScrollLabelView"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libTXScrollLabelView.a">

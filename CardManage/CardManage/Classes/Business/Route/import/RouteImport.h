@@ -21,6 +21,12 @@
 
 #pragma mark --- 身份认证 ---
 #import "userCheckOutViewController.h"
+//紧急联系人
+#import "LinkManViewController.h"
+//添加联系人
+#import "AddCardViewController.h"
+//单位信息
+#import "JobNewsViewController.h"
 //人脸识别页面
 #import "FaceCheckViewController.h"
 #endif /* RouteImport_h */

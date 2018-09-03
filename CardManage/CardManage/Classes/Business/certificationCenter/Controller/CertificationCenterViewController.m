@@ -7,6 +7,7 @@
 //
 
 #import "CertificationCenterViewController.h"
+#import "certificationImport.h"
 
 @interface CertificationCenterViewController ()
 
@@ -19,6 +20,8 @@
     
     [[CertificationLogicManager shared] startLogicManagerWithViewController:self];
     [[CertificationLogicManager shared] registerObserWithDele:self];
+    
+    [[CommonPopView shared] showMaterialPopView];
 }
 
 - (void)certificationRowAction:(NSNotification *)noti{

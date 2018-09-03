@@ -29,11 +29,15 @@
         case 1:
         {
             HYLog(@"紧急联系人");
+            LinkManViewController *linkMainVC = [[LinkManViewController alloc] init];
+            [belongVC.navigationController pushViewController:linkMainVC animated:YES];
         }
             break;
         case 2:
         {
             HYLog(@"收款银行卡");
+            AddCardViewController *addCardVC = [[AddCardViewController alloc] init];
+            [belongVC.navigationController pushViewController:addCardVC animated:YES];
         }
             break;
         case 3:
@@ -44,6 +48,8 @@
         case 4:
         {
             HYLog(@"工作信息");
+            JobNewsViewController *jobVC = [[JobNewsViewController alloc] init];
+            [belongVC.navigationController pushViewController:jobVC animated:YES];
         }
             break;
         case 5:

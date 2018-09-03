@@ -10,7 +10,12 @@ target 'CardManage' do
   pod 'FMDB'
   pod 'Masonry'
   pod 'MBProgressHUD'
+  # 跑马灯
   pod 'TXScrollLabelView'
+  # 带动画的弹框
+  pod 'ZJAnimationPopView'
+  # 网络指示器
+  pod 'MBProgressHUD'
 
   # Pods for CardManage
 
